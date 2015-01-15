@@ -1,2 +1,3 @@
 User-agent: *
 Noindex: /
+Disallow: /ghost/
