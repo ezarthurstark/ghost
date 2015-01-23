@@ -1,20 +1,15 @@
 .site-footer {
-  position: relative;
-  margin: 8rem 0 0 0;
-  padding: 0.5rem 15px;
-  border-top: #EBF2F6 1px solid;
-  font-family: "Open Sans", sans-serif;
-  font-size: rem-calc(10);
-  line-height: 1.75em;
-  color: #BBC7CC;
-  a {
-    color: #BBC7CC;
-    text-decoration: none;
-    font-weight: bold;
-    &:hover {
-      color: #50585D;
-    }
+  @include clearfix;
+  margin-top: rem-calc(40);
+  padding: rem-calc(20 10);
+  border-top: 1px solid #EBF2F6;
 
+  a {
+    text-decoration: none;
+    font-weight: $font-weight-bold;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
