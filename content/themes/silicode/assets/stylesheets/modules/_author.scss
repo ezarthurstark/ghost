@@ -1,6 +1,6 @@
 .post-head.main-header {
   height: 65%;
-  min-height: 180px;
+  min-height: rem-calc(180);
 }
 
 .no-cover.post-head.main-header {
@@ -12,23 +12,23 @@
 
 .tag-head.main-header {
   height: 40%;
-  min-height: 180px;
+  min-height: rem-calc(180);
 }
 
 .author-head.main-header {
   height: 40%;
-  min-height: 180px;
+  min-height: rem-calc(180);
 }
 
 .no-cover.author-head.main-header {
   height: 10%;
-  min-height: 100px;
+  min-height: rem-calc(100);
   background: transparent;
 }
 
 .author-profile {
-  padding: 0 15px 5rem 15px;
-  border-bottom: #EBF2F6 1px solid;
+  padding: rem-calc(0 15 50 15);
+  border-bottom: #EBF2F6 rem-calc(1) solid;
   text-align: center;
 }
 
@@ -36,23 +36,23 @@
 .author-profile:after {
   display: block;
   content: "";
-  width: 7px;
-  height: 7px;
-  border: #E7EEF2 1px solid;
+  width: rem-calc(7);
+  height: rem-calc(7);
+  border: #E7EEF2 rem-calc(1) solid;
   position: absolute;
-  bottom: -5px;
+  bottom: rem-calc(-5);
   left: 50%;
-  margin-left: -5px;
-  background: #FFF;
+  margin-left: rem-calc(-5);
+  background: $white;
   border-radius: 100%;
-  box-shadow: #FFF 0 0 0 5px;
+  box-shadow: $white rem-calc(0 0 0 5);
 }
 
 .author-image {
   box-sizing: border-box;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: rem-calc(80);
+  height: rem-calc(80);
   border-radius: 100%;
   overflow: hidden;
   z-index: 2;
@@ -71,14 +71,14 @@
     position: relative;
     left: auto;
     top: auto;
-    width: 120px;
-    height: 120px;
-    padding: 3px;
-    margin: -100px auto 0 auto;
+    width: rem-calc(120);
+    height: rem-calc(120);
+    padding: rem-calc(3);
+    margin: rem-calc(-100) auto 0 auto;
     box-shadow: none;
   }
   .author-meta {
-    margin: 2rem 0;
+    margin: rem-calc(20 0);
     font-family: "Merriweather", serif;
     letter-spacing: 0.01rem;
     font-size: 1.7rem;
@@ -86,12 +86,12 @@
 }
 
 .author-title {
-  margin: 1.5rem 0 1rem;
+  margin: rem-calc(15 0 10);
 }
 
 .author-bio {
-  font-size: 1.8rem;
-  line-height: 1.5em;
+  font-size: rem-calc(18);
+  line-height: rem-calc(15);
   font-weight: 200;
   color: #50585D;
   letter-spacing: 0;
@@ -105,7 +105,7 @@
 
 .author-meta span {
   display: inline-block;
-  margin: 0 2rem 1rem 0;
+  margin: rem-calc(0 20 10 0);
   word-wrap: break-word;
 }
 .author-meta a {

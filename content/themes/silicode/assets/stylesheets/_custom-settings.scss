@@ -1,5 +1,43 @@
 $white: #ffffff;
+$silver:#EFEFEF;
 $black: #111111;
+
+$jet: #3A4145;
+$mineshaft : #2E2E2E;
+
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-family-sans-serif : Montserrat, Helvetica Neue, Helvetica, sans-serif;
+$font-family-serif : Merriweather, Georgia, serif;
+
+// a. Base
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$body-bg: $white;
+$body-font-color: $jet;
+$body-font-family: $font-family-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+// e. Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$header-font-family: $font-family-sans-serif;
+$header-font-weight: $font-weight-normal;
+$header-font-style: normal;
+$header-font-color: $mineshaft;
+$header-line-height: 1.15em;
+$header-top-margin: 0;
+$header-bottom-margin: .4em;
+$header-text-rendering: optimizeLegibility;
+
+$h1-font-size: rem-calc(50);
+$h2-font-size: rem-calc(36);
+$h3-font-size: rem-calc(30);
+$h4-font-size: rem-calc(25);
+$h5-font-size: rem-calc(20);
+$h6-font-size: rem-calc(20);
+
 
 // 25. Reveal
 // - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,33 +1,26 @@
-/* ==========================================================================
- 8. Pagination - Tools to let you flick between pages
- ========================================================================== */
-
- /* The main wrapper for our pagination links */
- .pagination {
+.pagination {
   position: relative;
-  //width: 80%;
-  //max-width: 710px;
-  margin: rem-calc(40) auto;
-  font-family: "Open Sans", sans-serif;
-  font-size: rem-calc(13);
-  color: #9EABB3;
-  text-align: center;
-}
-
+//width: 80%;
+//max-width: 710px;
+margin: rem-calc(40) auto;
+font-family: "Open Sans", sans-serif;
+font-size: rem-calc(13);
+color: #9EABB3;
+text-align: center;
 .pagination a {
   color: #9EABB3;
   transition: all 0.2s ease;
 }
+}
 
-/* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
   position: absolute;
   display: inline-block;
-  padding: 0 15px;
-  border: #bfc8cd 1px solid;
+  padding: rem-calc(0 15);
+  border: #bfc8cd rem-calc(1) solid;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: rem-calc(4);
   transition: border ease 0.3s;
 }
 
@@ -37,48 +30,51 @@
 
 .page-number {
   display: inline-block;
-  padding: 2px 0;
-  min-width: 100px;
+  padding: rem-calc(2 0);
+  min-width: rem-calc(100);
 }
 
 .newer-posts {
   left: 0;
 }
 
-.older-posts:hover,
-.newer-posts:hover {
-  color: #889093;
-  border-color: #98a0a4;
+.older-posts,
+.newer-posts{
+  &:hover{
+    color: #889093;
+    border-color: #98a0a4;
+  }
 }
 
 .extra-pagination {
   display: none;
-  border-bottom: #EBF2F6 1px solid;
+  border-bottom: #EBF2F6 rem-calc(1) solid;
+  &:after {
+    display: block;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border: #E7EEF2 rem-calc(1) solid;
+    position: absolute;
+    bottom: rem-calc(-5);
+    left: 50%;
+    margin-left: rem-calc(-5);
+    background: $white;
+    border-radius: 100%;
+    box-shadow: $white rem-calc(0 0 0 5);
+  }
+  .pagination {
+    width: auto;
+  }
 }
-.extra-pagination:after {
-  display: block;
-  content: "";
-  width: 7px;
-  height: 7px;
-  border: #E7EEF2 1px solid;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  margin-left: -5px;
-  background: #FFF;
-  border-radius: 100%;
-  box-shadow: #FFF 0 0 0 5px;
-}
-.extra-pagination .pagination {
-  width: auto;
-}
+
 
 /* On page2+ make all the headers smaller */
-.archive-template .main-header {
-  max-height: 30%;
-}
-
-/* On page2+ show extra pagination controls at the top of post list */
-.archive-template .extra-pagination {
-  display: block;
+.archive-template {
+  .main-header {
+    max-height: 30%;
+  }
+  .extra-pagination {
+    display: block;
+  }
 }

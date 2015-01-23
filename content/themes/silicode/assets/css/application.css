@@ -470,11 +470,11 @@ body {
 }
 
 body {
-  background: #fff;
-  color: #222;
+  background: #ffffff;
+  color: #3A4145;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Merriweather, Georgia, serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -970,7 +970,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Merriweather, Georgia, serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2907,48 +2907,48 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: Montserrat, Helvetica Neue, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #222222;
+  color: #2E2E2E;
   text-rendering: optimizeLegibility;
-  margin-top: 0.2rem;
-  margin-bottom: 0.5rem;
-  line-height: 1.4;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  line-height: 1.15em;
 }
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: #777777;
   line-height: 0;
 }
 
 h1 {
-  font-size: 2.125rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 1.6875rem;
+  font-size: 1.625rem;
 }
 
 h3 {
-  font-size: 1.375rem;
+  font-size: 1.5625rem;
 }
 
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 h5 {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #777777;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -3064,7 +3064,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #3A4145;
   cursor: help;
 }
 
@@ -3084,20 +3084,20 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: #5e5e5e;
 }
 blockquote cite:before {
   content: "\2014 \0020";
 }
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: #5e5e5e;
 }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: #777777;
 }
 
 /* Microformats */
@@ -3129,31 +3129,31 @@ blockquote p {
 
 @media only screen and (min-width: 40.063em) {
   h1, h2, h3, h4, h5, h6 {
-    line-height: 1.4;
+    line-height: 1.15em;
   }
 
   h1 {
-    font-size: 2.75rem;
+    font-size: 3.125rem;
   }
 
   h2 {
-    font-size: 2.3125rem;
+    font-size: 2.25rem;
   }
 
   h3 {
-    font-size: 1.6875rem;
+    font-size: 1.875rem;
   }
 
   h4 {
-    font-size: 1.4375rem;
+    font-size: 1.5625rem;
   }
 
   h5 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   h6 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 }
 /*
@@ -3755,11 +3755,12 @@ html {
 }
 
 body {
+  font-family: Merriweather, Georgia, serif;
+  color: #3A4145;
+  font-weight: normal;
   height: 100%;
   max-height: 100%;
-  font-family: "Merriweather", serif;
   letter-spacing: 0.01rem;
-  color: #3A4145;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
   -o-font-feature-settings: 'kern' 1;
@@ -3768,13 +3769,17 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
+  font-family: Montserrat, Helvetica Neue, Helvetica, sans-serif;
+  color: #2E2E2E;
+  line-height: 1.15em;
+  margin-top: 0;
+  margin-bottom: 0.4em;
+  text-rendering: optimizeLegibility;
+  margin-left: 0;
+  margin-right: 0;
   -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
   -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-  color: #2E2E2E;
-  line-height: 1.15em;
-  margin: 0 0 0.4em 0;
-  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
@@ -3835,11 +3840,11 @@ ul ol, ol ul {
 dl dt {
   float: left;
   width: 11.25rem;
+  text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
   clear: left;
   text-align: right;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-weight: 700;
   margin-bottom: 1em;
 }
@@ -3946,14 +3951,14 @@ kbd {
   padding: 0.0625rem 0.5rem;
   border: #CCC 0.0625rem solid;
   color: #666;
-  text-shadow: #FFF 0 0.0625rem 0;
+  text-shadow: #ffffff 0 0.0625rem 0;
   font-size: 0.9em;
   font-weight: 700;
   background: #F4F4F4;
   -webkit-border-radius: 0.25rem;
           border-radius: 0.25rem;
-  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
-          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #ffffff inset;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #ffffff inset;
 }
 
 table {
@@ -3976,11 +3981,10 @@ table td {
 }
 
 table th {
-  color: #000;
+  color: #111111;
 }
 
-table caption + thead tr:first-child th,
-table caption + thead tr:first-child td,
+table caption + thead tr:first-child th, table caption + thead tr:first-child td,
 table colgroup + thead tr:first-child th,
 table colgroup + thead tr:first-child td,
 table thead:first-child tr:first-child th,
@@ -3993,7 +3997,7 @@ table tbody + tbody {
 }
 
 table table table {
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 
 table tbody > tr:nth-child(odd) > td,
@@ -4056,10 +4060,6 @@ margin on the iframe, cause it breaks stuff. */
   vertical-align: middle;
 }
 
-/* ==========================================================================
-   4. General - The main styles for the the theme
-   ========================================================================== */
-/* Big cover image on the home page */
 .main-header {
   position: relative;
   display: table;
@@ -4071,7 +4071,6 @@ margin on the iframe, cause it breaks stuff. */
   background-size: cover;
   overflow: hidden;
 }
-
 .main-header .inner {
   width: 80%;
 }
@@ -4081,17 +4080,38 @@ margin on the iframe, cause it breaks stuff. */
   padding: 2.1875rem 2.5rem;
   margin: 0 0 1.875rem 0;
 }
-
 .main-nav a {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
+}
+.main-nav.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.375rem;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+}
+.main-nav.overlay a {
+  color: #ffffff;
+}
+.main-nav.overlay a:hover {
+  color: #222;
+  border-color: #ffffff;
+  background: #ffffff;
+  -webkit-transition: all 0.1s ease;
+       -o-transition: all 0.1s ease;
+          transition: all 0.1s ease;
 }
 
 .content {
   margin-top: 8.4375rem;
 }
 
-/* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
   display: block;
   position: absolute;
@@ -4113,17 +4133,13 @@ margin on the iframe, cause it breaks stuff. */
        -o-animation: bounce 4s 2s infinite;
           animation: bounce 4s 2s infinite;
 }
-
-/* Stop it bouncing and increase contrast when hovered */
 .scroll-down:hover {
-  color: #fff;
+  color: #ffffff;
   -webkit-animation: none;
-  -o-animation: none;
-     animation: none;
+       -o-animation: none;
+          animation: none;
 }
 
-/* Put a semi-opaque radial gradient behind the icon to make it more visible
-on photos which happen to have a light background. */
 .home-template .main-header:after {
   display: block;
   content: " ";
@@ -4140,7 +4156,6 @@ on photos which happen to have a light background. */
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, transparent 70%, transparent 100%);
 }
 
-/* Hide when there's no cover image or on page2+ */
 .no-cover .scroll-down,
 .no-cover.main-header:after,
 .archive-template .scroll-down,
@@ -4148,7 +4163,6 @@ on photos which happen to have a light background. */
   display: none;
 }
 
-/* Appears in the top right corner of your home page */
 .blog-logo {
   display: block;
   float: left;
@@ -4187,7 +4201,6 @@ on photos which happen to have a light background. */
        -o-transition: all ease 0.3s;
           transition: all ease 0.3s;
 }
-
 .back-button:before {
   position: relative;
   bottom: -0.125rem;
@@ -4218,24 +4231,9 @@ on photos which happen to have a light background. */
        -o-transition: all ease 0.3s;
           transition: all ease 0.3s;
 }
-
 .subscribe-button:before {
   font-size: 0.5625rem;
   margin-right: 0.375rem;
-}
-
-/* Special styles when overlaid on an image*/
-.main-nav.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4.375rem;
-  border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
 }
 
 .no-cover .main-nav.overlay,
@@ -4244,39 +4242,24 @@ on photos which happen to have a light background. */
   background: none;
 }
 
-.main-nav.overlay a {
-  color: #fff;
-}
-
 .main-nav.overlay .back-button,
 .main-nav.overlay .subscribe-button {
   border-color: rgba(255, 255, 255, 0.6);
 }
 
-.main-nav.overlay a:hover {
-  color: #222;
-  border-color: #fff;
-  background: #fff;
-  -webkit-transition: all 0.1s ease;
-       -o-transition: all 0.1s ease;
-          transition: all 0.1s ease;
-}
-
-/* Add a border to the buttons on hover */
 .back-button:hover,
 .subscribe-button:hover {
   border-color: #bfc8cd;
   color: #9EABB3;
 }
 
-/* The details of your blog. Defined in ghost/settings/ */
 .page-title {
   margin: 0.625rem 0;
   font-size: 3.125rem;
   letter-spacing: -0.0625rem;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  color: #fff;
+  color: #ffffff;
 }
 
 .page-description {
@@ -4294,17 +4277,13 @@ on photos which happen to have a light background. */
   max-height: 40%;
   background: #f5f8fa;
 }
-
 .no-cover .page-title {
   color: rgba(0, 0, 0, 0.8);
 }
-
 .no-cover .page-description {
   color: rgba(0, 0, 0, 0.5);
 }
-
-.no-cover .main-nav.overlay .back-button,
-.no-cover .main-nav.overlay .subscribe-button {
+.no-cover .main-nav.overlay .back-button, .no-cover .main-nav.overlay .subscribe-button {
   color: rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.3);
 }
@@ -4318,7 +4297,6 @@ on photos which happen to have a light background. */
        -o-animation-delay: 0.2s;
           animation-delay: 0.2s;
 }
-
 .home-template .page-description {
   -webkit-animation: fade-in-down 0.9s;
        -o-animation: fade-in-down 0.9s;
@@ -4340,13 +4318,9 @@ on photos which happen to have a light background. */
       -ms-hyphens: auto;
           hyphens: auto;
 }
-
 .post + .post {
   margin: 2.5rem auto;
 }
-
-/* Add a little circle in the middle of the border-bottom on our .post
-just for the lolz and stylepoints. */
 .post:after {
   display: block;
   content: "";
@@ -4357,11 +4331,11 @@ just for the lolz and stylepoints. */
   bottom: -0.3125rem;
   left: 50%;
   margin-left: -0.3125rem;
-  background: #FFF;
+  background: #ffffff;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  -webkit-box-shadow: #FFF 0 0 0 0.3125rem;
-          box-shadow: #FFF 0 0 0 0.3125rem;
+  -webkit-box-shadow: #ffffff 0 0 0 0.3125rem;
+          box-shadow: #ffffff 0 0 0 0.3125rem;
 }
 
 body:not(.post-template) .post-title {
@@ -4371,7 +4345,6 @@ body:not(.post-template) .post-title {
 .post-title {
   font-weight: 600;
 }
-
 .post-title a {
   text-decoration: none;
 }
@@ -4388,8 +4361,14 @@ body:not(.post-template) .post-title {
 .post-meta {
   display: block;
   margin: 1.75rem 0 0 0;
-  font-family: "Open Sans", sans-serif;
   color: #9EABB3;
+}
+.post-meta a {
+  color: #9EABB3;
+  text-decoration: none;
+}
+.post-meta a:hover {
+  text-decoration: underline;
 }
 
 .author-thumb {
@@ -4399,15 +4378,6 @@ body:not(.post-template) .post-title {
   margin-right: 0.5625rem;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-}
-
-.post-meta a {
-  color: #9EABB3;
-  text-decoration: none;
-}
-
-.post-meta a:hover {
-  text-decoration: underline;
 }
 
 .user-meta {
@@ -4461,10 +4431,6 @@ body:not(.post-template) .post-title {
   line-height: 1.5em;
 }
 
-/* ==========================================================================
- 8. Pagination - Tools to let you flick between pages
- ========================================================================== */
-/* The main wrapper for our pagination links */
 .pagination {
   position: relative;
   margin: 2.5rem auto;
@@ -4473,24 +4439,22 @@ body:not(.post-template) .post-title {
   color: #9EABB3;
   text-align: center;
 }
-
-.pagination a {
+.pagination .pagination a {
   color: #9EABB3;
   -webkit-transition: all 0.2s ease;
        -o-transition: all 0.2s ease;
           transition: all 0.2s ease;
 }
 
-/* Push the previous/next links out to the left/right */
 .older-posts,
 .newer-posts {
   position: absolute;
   display: inline-block;
-  padding: 0 15px;
-  border: #bfc8cd 1px solid;
+  padding: 0 0.9375rem;
+  border: #bfc8cd 0.0625rem solid;
   text-decoration: none;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: 0.25rem;
+          border-radius: 0.25rem;
   -webkit-transition: border ease 0.3s;
        -o-transition: border ease 0.3s;
           transition: border ease 0.3s;
@@ -4502,8 +4466,8 @@ body:not(.post-template) .post-title {
 
 .page-number {
   display: inline-block;
-  padding: 2px 0;
-  min-width: 100px;
+  padding: 0.125rem 0;
+  min-width: 6.25rem;
 }
 
 .newer-posts {
@@ -4518,26 +4482,24 @@ body:not(.post-template) .post-title {
 
 .extra-pagination {
   display: none;
-  border-bottom: #EBF2F6 1px solid;
+  border-bottom: #EBF2F6 0.0625rem solid;
 }
-
 .extra-pagination:after {
   display: block;
   content: "";
   width: 7px;
   height: 7px;
-  border: #E7EEF2 1px solid;
+  border: #E7EEF2 0.0625rem solid;
   position: absolute;
-  bottom: -5px;
+  bottom: -0.3125rem;
   left: 50%;
-  margin-left: -5px;
-  background: #FFF;
+  margin-left: -0.3125rem;
+  background: #ffffff;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  -webkit-box-shadow: #FFF 0 0 0 5px;
-          box-shadow: #FFF 0 0 0 5px;
+  -webkit-box-shadow: #ffffff 0 0 0 0.3125rem;
+          box-shadow: #ffffff 0 0 0 0.3125rem;
 }
-
 .extra-pagination .pagination {
   width: auto;
 }
@@ -4546,8 +4508,6 @@ body:not(.post-template) .post-title {
 .archive-template .main-header {
   max-height: 30%;
 }
-
-/* On page2+ show extra pagination controls at the top of post list */
 .archive-template .extra-pagination {
   display: block;
 }
@@ -5221,7 +5181,7 @@ body:not(.post-template) .post-title {
 
 .post-head.main-header {
   height: 65%;
-  min-height: 180px;
+  min-height: 11.25rem;
 }
 
 .no-cover.post-head.main-header {
@@ -5233,23 +5193,23 @@ body:not(.post-template) .post-title {
 
 .tag-head.main-header {
   height: 40%;
-  min-height: 180px;
+  min-height: 11.25rem;
 }
 
 .author-head.main-header {
   height: 40%;
-  min-height: 180px;
+  min-height: 11.25rem;
 }
 
 .no-cover.author-head.main-header {
   height: 10%;
-  min-height: 100px;
+  min-height: 6.25rem;
   background: transparent;
 }
 
 .author-profile {
-  padding: 0 15px 5rem 15px;
-  border-bottom: #EBF2F6 1px solid;
+  padding: 0 0.9375rem 3.125rem 0.9375rem;
+  border-bottom: #EBF2F6 0.0625rem solid;
   text-align: center;
 }
 
@@ -5257,18 +5217,18 @@ body:not(.post-template) .post-title {
 .author-profile:after {
   display: block;
   content: "";
-  width: 7px;
-  height: 7px;
-  border: #E7EEF2 1px solid;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border: #E7EEF2 0.0625rem solid;
   position: absolute;
-  bottom: -5px;
+  bottom: -0.3125rem;
   left: 50%;
-  margin-left: -5px;
-  background: #FFF;
+  margin-left: -0.3125rem;
+  background: #ffffff;
   -webkit-border-radius: 100%;
           border-radius: 100%;
-  -webkit-box-shadow: #FFF 0 0 0 5px;
-          box-shadow: #FFF 0 0 0 5px;
+  -webkit-box-shadow: #ffffff 0 0 0 0.3125rem;
+          box-shadow: #ffffff 0 0 0 0.3125rem;
 }
 
 .author-image {
@@ -5276,8 +5236,8 @@ body:not(.post-template) .post-title {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
   -webkit-border-radius: 100%;
           border-radius: 100%;
   overflow: hidden;
@@ -5297,27 +5257,27 @@ body:not(.post-template) .post-title {
   position: relative;
   left: auto;
   top: auto;
-  width: 120px;
-  height: 120px;
-  padding: 3px;
-  margin: -100px auto 0 auto;
+  width: 7.5rem;
+  height: 7.5rem;
+  padding: 0.1875rem;
+  margin: -6.25rem auto 0 auto;
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 .author-profile .author-meta {
-  margin: 2rem 0;
+  margin: 1.25rem 0;
   font-family: "Merriweather", serif;
   letter-spacing: 0.01rem;
   font-size: 1.7rem;
 }
 
 .author-title {
-  margin: 1.5rem 0 1rem;
+  margin: 0.9375rem 0 0.625rem;
 }
 
 .author-bio {
-  font-size: 1.8rem;
-  line-height: 1.5em;
+  font-size: 1.125rem;
+  line-height: 0.9375rem;
   font-weight: 200;
   color: #50585D;
   letter-spacing: 0;
@@ -5331,7 +5291,7 @@ body:not(.post-template) .post-title {
 /* Location, website, and link */
 .author-meta span {
   display: inline-block;
-  margin: 0 2rem 1rem 0;
+  margin: 0 1.25rem 0.625rem 0;
   word-wrap: break-word;
 }
 
@@ -5351,7 +5311,7 @@ pagination prev/next links */
 
 .site-footer {
   position: relative;
-  margin: 8rem 0 0 0;
+  margin: 5rem 0 0 0;
   padding: 0.5rem 15px;
   border-top: #EBF2F6 1px solid;
   font-family: "Open Sans", sans-serif;
