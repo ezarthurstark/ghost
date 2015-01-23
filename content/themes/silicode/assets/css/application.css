@@ -3577,12 +3577,12 @@ th.hide-for-touch {
 }
 
 /* ==========================================================================
-   2. General - Setting up some base styles
-   ========================================================================== */
+ 2. General - Setting up some base styles
+ ========================================================================== */
 html {
   height: 100%;
   max-height: 100%;
-  font-size: 62.5%;
+  font-size: 100%;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -3591,20 +3591,10 @@ body {
   max-height: 100%;
   font-family: "Merriweather", serif;
   letter-spacing: 0.01rem;
-  font-size: 1.8rem;
-  line-height: 1.75em;
   color: #3A4145;
   -webkit-font-feature-settings: 'kern' 1;
   -moz-font-feature-settings: 'kern' 1;
   -o-font-feature-settings: 'kern' 1;
-}
-
-::-moz-selection {
-  background: #D6EDFF;
-}
-
-::selection {
-  background: #D6EDFF;
 }
 
 h1, h2, h3,
@@ -3619,30 +3609,30 @@ h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5rem;
-  letter-spacing: -2px;
-  text-indent: -3px;
+  font-size: 3.125rem;
+  letter-spacing: -0.125rem;
+  text-indent: -0.1875rem;
 }
 
 h2 {
-  font-size: 3.6rem;
-  letter-spacing: -1px;
+  font-size: 2.25rem;
+  letter-spacing: -0.0625rem;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 1.875rem;
 }
 
 h4 {
-  font-size: 2.5rem;
+  font-size: 1.5625rem;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 h6 {
-  font-size: 2rem;
+  font-size: 1.25rem;
 }
 
 a {
@@ -3664,7 +3654,7 @@ p, ul, ol, dl {
 }
 
 ol, ul {
-  padding-left: 3rem;
+  padding-left: 1.875rem;
 }
 
 ol ol, ul ul,
@@ -3675,7 +3665,7 @@ ul ol, ol ul {
 
 dl dt {
   float: left;
-  width: 180px;
+  width: 11.25rem;
   overflow: hidden;
   clear: left;
   text-align: right;
@@ -3686,7 +3676,7 @@ dl dt {
 }
 
 dl dd {
-  margin-left: 200px;
+  margin-left: 12.5rem;
   margin-bottom: 1em;
 }
 
@@ -3700,9 +3690,9 @@ li li {
 
 hr {
   display: block;
-  height: 1px;
+  height: 0.0625rem;
   border: 0;
-  border-top: #EFEFEF 1px solid;
+  border-top: #EFEFEF 0.0625rem solid;
   margin: 3.2em 0;
   padding: 0;
 }
@@ -3745,14 +3735,14 @@ mark {
 }
 
 code, tt {
-  padding: 1px 3px;
+  padding: 0.0625rem 0.1875rem;
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 0.85em;
   white-space: pre-wrap;
-  border: #E3EDF3 1px solid;
+  border: #E3EDF3 0.0625rem solid;
   background: #F7FAFB;
-  -webkit-border-radius: 2px;
-          border-radius: 2px;
+  -webkit-border-radius: 0.125rem;
+          border-radius: 0.125rem;
 }
 
 pre {
@@ -3760,16 +3750,16 @@ pre {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0 0 1.75em 0;
-  border: #E3EDF3 1px solid;
+  border: #E3EDF3 0.0625rem solid;
   width: 100%;
-  padding: 10px;
+  padding: 0.625rem;
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 0.9em;
   white-space: pre;
   overflow: auto;
   background: #F7FAFB;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  -webkit-border-radius: 0.1875rem;
+          border-radius: 0.1875rem;
 }
 
 pre code, tt {
@@ -3784,15 +3774,15 @@ pre code, tt {
 kbd {
   display: inline-block;
   margin-bottom: 0.4em;
-  padding: 1px 8px;
-  border: #CCC 1px solid;
+  padding: 0.0625rem 0.5rem;
+  border: #CCC 0.0625rem solid;
   color: #666;
-  text-shadow: #FFF 0 1px 0;
+  text-shadow: #FFF 0 0.0625rem 0;
   font-size: 0.9em;
   font-weight: 700;
   background: #F4F4F4;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  -webkit-border-radius: 0.25rem;
+          border-radius: 0.25rem;
   -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
           box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 0 #fff inset;
 }
@@ -3809,11 +3799,11 @@ table {
 
 table th,
 table td {
-  padding: 8px;
-  line-height: 20px;
+  padding: 0.5rem;
+  line-height: 1.25rem;
   text-align: left;
   vertical-align: top;
-  border-top: #EFEFEF 1px solid;
+  border-top: #EFEFEF 0.0625rem solid;
 }
 
 table th {
@@ -3830,7 +3820,7 @@ table thead:first-child tr:first-child td {
 }
 
 table tbody + tbody {
-  border-top: #EFEFEF 2px solid;
+  border-top: #EFEFEF 0.125rem solid;
 }
 
 table table table {
@@ -3906,7 +3896,7 @@ margin on the iframe, cause it breaks stuff. */
   display: table;
   width: 100%;
   height: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 3.125rem;
   text-align: center;
   background: #222 no-repeat center center;
   background-size: cover;
@@ -3919,8 +3909,8 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-nav {
   position: relative;
-  padding: 35px 40px;
-  margin: 0 0 30px 0;
+  padding: 2.1875rem 2.5rem;
+  margin: 0 0 1.875rem 0;
 }
 
 .main-nav a {
@@ -3928,27 +3918,31 @@ margin on the iframe, cause it breaks stuff. */
   font-family: 'Open Sans', sans-serif;
 }
 
+.content {
+  margin-top: 8.4375rem;
+}
+
 /* Create a bouncing scroll-down arrow on homepage with cover image */
 .scroll-down {
   display: block;
   position: absolute;
   z-index: 100;
-  bottom: 45px;
+  bottom: 2.8125rem;
   left: 50%;
-  margin-left: -16px;
-  width: 34px;
-  height: 34px;
-  font-size: 34px;
+  margin-left: -1rem;
+  width: 2.125rem;
+  height: 2.125rem;
+  font-size: 2.125rem;
   text-align: center;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.7);
   -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-   -o-transform: rotate(-90deg);
-      transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   -webkit-animation: bounce 4s 2s infinite;
-  -o-animation: bounce 4s 2s infinite;
-     animation: bounce 4s 2s infinite;
+       -o-animation: bounce 4s 2s infinite;
+          animation: bounce 4s 2s infinite;
 }
 
 /* Stop it bouncing and increase contrast when hovered */
@@ -3960,18 +3954,18 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 /* Put a semi-opaque radial gradient behind the icon to make it more visible
-   on photos which happen to have a light background. */
+on photos which happen to have a light background. */
 .home-template .main-header:after {
   display: block;
   content: " ";
-  width: 150px;
-  height: 130px;
+  width: 9.375rem;
+  height: 8.125rem;
   -webkit-border-radius: 100%;
           border-radius: 100%;
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -75px;
+  margin-left: -4.6875rem;
   background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.15) 0%, transparent 70%, transparent 100%);
   background: -o-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.15) 0%, transparent 70%, transparent 100%);
   background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.15) 0%, transparent 70%, transparent 100%);
@@ -3998,27 +3992,27 @@ margin on the iframe, cause it breaks stuff. */
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
-  height: 38px;
-  padding: 1px 0 5px 0;
+  height: 2.375rem;
+  padding: 0.0625rem 0 0.3125rem 0;
   width: auto;
 }
 
 .back-button {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   display: inline-block;
   float: left;
-  height: 38px;
-  padding: 0 15px 0 10px;
-  border: transparent 1px solid;
+  height: 2.375rem;
+  padding: 0 0.9375rem 0 0.625rem;
+  border: transparent 0.0625rem solid;
   color: #9EABB3;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  line-height: 35px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  line-height: 2.1875rem;
+  -webkit-border-radius: 0.1875rem;
+          border-radius: 0.1875rem;
   background: rgba(0, 0, 0, 0.1);
   -webkit-transition: all ease 0.3s;
        -o-transition: all ease 0.3s;
@@ -4027,29 +4021,29 @@ margin on the iframe, cause it breaks stuff. */
 
 .back-button:before {
   position: relative;
-  bottom: -2px;
-  font-size: 13px;
+  bottom: -0.125rem;
+  font-size: 0.8125rem;
   line-height: 0;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .subscribe-button {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   display: inline-block;
   float: right;
-  height: 38px;
-  padding: 0 20px;
-  border: transparent 1px solid;
+  height: 2.375rem;
+  padding: 0 1.25rem;
+  border: transparent 0.0625rem solid;
   color: #9EABB3;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  line-height: 35px;
+  line-height: 2.1875rem;
   white-space: nowrap;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  -webkit-border-radius: 0.1875rem;
+          border-radius: 0.1875rem;
   background: rgba(0, 0, 0, 0.1);
   -webkit-transition: all ease 0.3s;
        -o-transition: all ease 0.3s;
@@ -4057,8 +4051,8 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .subscribe-button:before {
-  font-size: 9px;
-  margin-right: 6px;
+  font-size: 0.5625rem;
+  margin-right: 0.375rem;
 }
 
 /* Special styles when overlaid on an image*/
@@ -4067,7 +4061,7 @@ margin on the iframe, cause it breaks stuff. */
   top: 0;
   left: 0;
   right: 0;
-  height: 70px;
+  height: 4.375rem;
   border: none;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
@@ -4108,9 +4102,9 @@ margin on the iframe, cause it breaks stuff. */
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
-  margin: 10px 0 10px 0;
-  font-size: 5rem;
-  letter-spacing: -1px;
+  margin: 0.625rem 0;
+  font-size: 3.125rem;
+  letter-spacing: -0.0625rem;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
   color: #fff;
@@ -4149,30 +4143,28 @@ margin on the iframe, cause it breaks stuff. */
 /* Add subtle load-in animation for content on the home page */
 .home-template .page-title {
   -webkit-animation: fade-in-down 0.6s;
-  -o-animation: fade-in-down 0.6s;
-     animation: fade-in-down 0.6s;
+       -o-animation: fade-in-down 0.6s;
+          animation: fade-in-down 0.6s;
   -webkit-animation-delay: 0.2s;
-  -o-animation-delay: 0.2s;
-     animation-delay: 0.2s;
+       -o-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .home-template .page-description {
   -webkit-animation: fade-in-down 0.9s;
-  -o-animation: fade-in-down 0.9s;
-     animation: fade-in-down 0.9s;
+       -o-animation: fade-in-down 0.9s;
+          animation: fade-in-down 0.9s;
   -webkit-animation-delay: 0.1s;
-  -o-animation-delay: 0.1s;
-     animation-delay: 0.1s;
+       -o-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
   position: relative;
-  width: 80%;
-  max-width: 710px;
-  margin: 4rem auto;
-  padding-bottom: 4rem;
-  border-bottom: #EBF2F6 1px solid;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+  border-bottom: #EBF2F6 0.0625rem solid;
   word-break: break-word;
   -webkit-hyphens: auto;
      -moz-hyphens: auto;
@@ -4180,27 +4172,31 @@ margin on the iframe, cause it breaks stuff. */
           hyphens: auto;
 }
 
+.post + .post {
+  margin: 2.5rem auto;
+}
+
 /* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
+just for the lolz and stylepoints. */
 .post:after {
   display: block;
   content: "";
-  width: 7px;
+  width: 0.4375rem;
   height: 7px;
-  border: #E7EEF2 1px solid;
+  border: #E7EEF2 0.0625rem solid;
   position: absolute;
-  bottom: -5px;
+  bottom: -0.3125rem;
   left: 50%;
-  margin-left: -5px;
+  margin-left: -0.3125rem;
   background: #FFF;
   -webkit-border-radius: 100%;
-  border-radius: 100%;
-  -webkit-box-shadow: #FFF 0 0 0 5px;
-          box-shadow: #FFF 0 0 0 5px;
+          border-radius: 100%;
+  -webkit-box-shadow: #FFF 0 0 0 0.3125rem;
+          box-shadow: #FFF 0 0 0 0.3125rem;
 }
 
 body:not(.post-template) .post-title {
-  font-size: 3.6rem;
+  font-size: 2.25rem;
 }
 
 .post-title a {
@@ -4209,7 +4205,6 @@ body:not(.post-template) .post-title {
 
 .post-excerpt p {
   margin: 0;
-  font-size: 0.9em;
   line-height: 1.7em;
 }
 
@@ -4221,16 +4216,14 @@ body:not(.post-template) .post-title {
   display: block;
   margin: 1.75rem 0 0 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
   color: #9EABB3;
 }
 
 .author-thumb {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   float: left;
-  margin-right: 9px;
+  margin-right: 0.5625rem;
   -webkit-border-radius: 100%;
           border-radius: 100%;
 }
@@ -4247,16 +4240,14 @@ body:not(.post-template) .post-title {
 .user-meta {
   position: relative;
   padding: 0.3rem 40px 0 100px;
-  min-height: 77px;
+  min-height: 4.8125rem;
 }
 
 .post-date {
   display: inline-block;
-  margin-left: 8px;
-  padding-left: 12px;
+  margin-left: 0.5rem;
+  padding-left: 0.75rem;
   border-left: #d5dbde 1px solid;
-  text-transform: uppercase;
-  font-size: 1.3rem;
   white-space: nowrap;
 }
 
@@ -4273,7 +4264,7 @@ body:not(.post-template) .post-title {
 
 .user-bio {
   display: block;
-  max-width: 440px;
+  max-width: 27.5rem;
   font-size: 1.4rem;
   line-height: 1.5em;
 }
@@ -4298,16 +4289,14 @@ body:not(.post-template) .post-title {
 }
 
 /* ==========================================================================
-   8. Pagination - Tools to let you flick between pages
-   ========================================================================== */
+ 8. Pagination - Tools to let you flick between pages
+ ========================================================================== */
 /* The main wrapper for our pagination links */
 .pagination {
   position: relative;
-  width: 80%;
-  max-width: 710px;
-  margin: 4rem auto;
+  margin: 2.5rem auto;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.3rem;
+  font-size: 0.8125rem;
   color: #9EABB3;
   text-align: center;
 }
@@ -4371,7 +4360,7 @@ body:not(.post-template) .post-title {
   margin-left: -5px;
   background: #FFF;
   -webkit-border-radius: 100%;
-  border-radius: 100%;
+          border-radius: 100%;
   -webkit-box-shadow: #FFF 0 0 0 5px;
           box-shadow: #FFF 0 0 0 5px;
 }
@@ -4909,6 +4898,7 @@ body:not(.post-template) .post-title {
    imperfections with browser width % calculations and rounding */
 .post-template .content {
   overflow: hidden;
+  margin-top: 0;
 }
 
 /* Tweak the .post wrapper style */
@@ -5154,7 +5144,7 @@ body:not(.post-template) .post-title {
   margin-left: -5px;
   background: #FFF;
   -webkit-border-radius: 100%;
-  border-radius: 100%;
+          border-radius: 100%;
   -webkit-box-shadow: #FFF 0 0 0 5px;
           box-shadow: #FFF 0 0 0 5px;
 }
@@ -5244,16 +5234,20 @@ body:not(.post-template) .post-title {
   display: none;
 }
 
+.post p {
+  font-size: 1.125rem;
+}
+
 /* ==========================================================================
-   9. Footer - The bottom of every page
-   ========================================================================== */
+ 9. Footer - The bottom of every page
+ ========================================================================== */
 .site-footer {
   position: relative;
   margin: 8rem 0 0 0;
   padding: 0.5rem 15px;
   border-top: #EBF2F6 1px solid;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.625rem;
   line-height: 1.75em;
   color: #BBC7CC;
 }
