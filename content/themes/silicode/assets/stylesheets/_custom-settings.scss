@@ -1,0 +1,17 @@
+$white: #ffffff;
+$black: #111111;
+
+// 25. Reveal
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$reveal-overlay-bg: rgba($white, .80);
+$reveal-overlay-bg-old: $white;
+
+$reveal-modal-padding: rem-calc(60);
+$reveal-box-shadow: 0 0 5px rgba($black,.1);
+
+$reveal-close-font-size: rem-calc(80);
+$reveal-close-top: rem-calc(20);
+$reveal-close-side: rem-calc(20);
+
+$reveal-border-color: $white;
