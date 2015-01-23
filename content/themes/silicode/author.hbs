@@ -1,38 +1,39 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{! The big featured header }}
-
-{{! Everything inside the #author tags pulls data from the author }}
 {{#author}}
-    <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
-        <nav class="main-nav overlay clearfix">
-            <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
-            <a class="subscribe-button icon-feed" href="{{url}}rss/">{{name}}</a>
-        </nav>
-    </header>
+  <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+      <a class="back-button icon-arrow-left" href="{{@blog.url}}">Accueil</a>
+      <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">S’abonner</a>
+    </nav>
+  </header>
 
-    <section class="author-profile inner">
-        {{#if image}}
-        <figure class="author-image">
-            <img src="{{image}}">
-            <figcation class="hidden">{{name}}'s Picture</figcation>
-        </figure>
-        {{/if}}
-        <h1 class="author-title">{{name}}</h1>
-        <p class="author-bio">{{bio}}</p>
-        <div class="author-meta">
-            {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-            {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-            <span class="author-stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
-        </div>
-    </section>
+  <section class="author-profile inner">
+    {{#if image}}
+      <figure class="author-image">
+        <img src="{{image}}" alt="{{name}} chez Silicon Salad">
+        <figcation class="hidden">Photo de {{name}} chez Silicon Salad</figcation>
+      </figure>
+    {{/if}}
+    <h1 class="author-title">{{name}}</h1>
+    <p class="author-bio">{{bio}}</p>
+    <div class="author-meta">
+      {{#if location}}
+        <span class="author-location icon-location">{{location}}</span>
+      {{/if}}
+      {{#if website}}
+        <span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>
+      {{/if}}
+      <span class="author-stats">
+        <i class="icon-stats"></i>
+        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+      </span>
+    </div>
+  </section>
 {{/author}}
 
-{{! The main content area on the homepage }}
 <main class="content row" role="main">
-    <div class="small-12 columns">
-        {{! The tag below includes the post loop - partials/loop.hbs }}
-        {{> "loop"}}
-    </div>
+  <div class="small-12 columns">
+    {{> "loop"}}
+  </div>
 </main>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {{! Document Settings }}
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -22,24 +21,13 @@
 </head>
 <body class="{{body_class}}">
 
-  {{! Everything else gets inserted here }}
   {{{body}}}
 
-  <footer class="site-footer">
-    <section class="copyright">
-      <a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}} Tous droits réservés.
-      <span>|</span>
-      <a href="http://www.siliconsalad.com/expertises/">Services</a>
-      <span>|</span>
-      <a href="http://www.siliconsalad.com/recrutement/">Recrutement</a>
-    </section>
-    <section class="poweredby">Réalisé grâce à un savant hacking de <a href="https://ghost.org">Ghost</a></section>
-  </footer>
+  {{> "footer"}}
+  {{> "reveal-search"}}
 
   {{! Ghost outputs important scripts and data with this tag }}
   {{ghost_foot}}
-
-  {{> "reveal-search"}}
 
   <script type="text/javascript" src="{{asset "../bower_components/foundation/js/foundation.js"}}"></script>
   <script type="text/javascript" src="{{asset "../bower_components/foundation/js/foundation/foundation.reveal.js"}}"></script>

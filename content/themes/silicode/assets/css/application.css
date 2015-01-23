@@ -5068,12 +5068,6 @@ body:not(.post-template) .post-title {
 .post-footer .author {
   margin-right: 180px;
 }
-.post-footer .share {
-  position: absolute;
-  top: 6rem;
-  right: 0;
-  width: 140px;
-}
 .post-footer .share a {
   font-size: 1.8rem;
   display: inline-block;
@@ -5310,22 +5304,23 @@ pagination prev/next links */
 }
 
 .site-footer {
-  position: relative;
-  margin: 5rem 0 0 0;
-  padding: 0.5rem 15px;
-  border-top: #EBF2F6 1px solid;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.625rem;
-  line-height: 1.75em;
-  color: #BBC7CC;
+  margin-top: 2.5rem;
+  padding: 1.25rem 0.625rem;
+  border-top: 1px solid #EBF2F6;
+}
+.site-footer:before, .site-footer:after {
+  content: " ";
+  display: table;
+}
+.site-footer:after {
+  clear: both;
 }
 .site-footer a {
-  color: #BBC7CC;
   text-decoration: none;
   font-weight: bold;
 }
 .site-footer a:hover {
-  color: #50585D;
+  text-decoration: underline;
 }
 
 .poweredby {
