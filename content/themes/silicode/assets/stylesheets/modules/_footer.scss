@@ -1,7 +1,3 @@
-/* ==========================================================================
- 9. Footer - The bottom of every page
- ========================================================================== */
-
 .site-footer {
   position: relative;
   margin: 8rem 0 0 0;
@@ -11,16 +7,15 @@
   font-size: rem-calc(10);
   line-height: 1.75em;
   color: #BBC7CC;
-}
+  a {
+    color: #BBC7CC;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+      color: #50585D;
+    }
 
-.site-footer a {
-  color: #BBC7CC;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.site-footer a:hover {
-  color: #50585D;
+  }
 }
 
 .poweredby {
