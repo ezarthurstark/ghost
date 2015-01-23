@@ -207,15 +207,6 @@ kbd {
   0 1px 0 0 $white inset;
 }
 
-table {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 1.75em 0;
-  width: 100%;
-  max-width: 100%;
-  background-color: transparent;
-}
-
 table th,
 table td {
   padding: rem-calc(8);
@@ -228,6 +219,12 @@ table td {
 table th { color: $black; }
 
 table {
+  box-sizing: border-box;
+  margin: 1.75em 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+
   caption + thead tr:first-child,
   colgroup + thead tr:first-child,
   thead:first-child tr:first-child {

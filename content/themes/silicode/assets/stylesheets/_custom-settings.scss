@@ -2,7 +2,8 @@ $white: #ffffff;
 $silver:#EFEFEF;
 $black: #111111;
 
-$jet: #3A4145;
+$oslogray : #7f8c8d;
+$capecod: #464c4c;
 $mineshaft : #2E2E2E;
 
 $font-weight-normal: normal !default;
@@ -14,7 +15,7 @@ $font-family-serif : Merriweather, Georgia, serif;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 $body-bg: $white;
-$body-font-color: $jet;
+$body-font-color: $oslogray;
 $body-font-family: $font-family-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
@@ -25,7 +26,7 @@ $body-font-style: normal;
 $header-font-family: $font-family-sans-serif;
 $header-font-weight: $font-weight-normal;
 $header-font-style: normal;
-$header-font-color: $mineshaft;
+$header-font-color: $capecod;
 $header-line-height: 1.15em;
 $header-top-margin: 0;
 $header-bottom-margin: .4em;
