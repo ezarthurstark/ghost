@@ -2907,7 +2907,7 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Montserrat, Helvetica Neue, Helvetica, sans-serif;
+  font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #464c4c;
@@ -3769,7 +3769,7 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: Montserrat, Helvetica Neue, Helvetica, sans-serif;
+  font-family: Raleway, Helvetica Neue, Helvetica, sans-serif;
   color: #464c4c;
   line-height: 1.15em;
   margin-top: 0;
@@ -4074,41 +4074,8 @@ margin on the iframe, cause it breaks stuff. */
   width: 80%;
 }
 
-.main-nav {
-  position: relative;
-  padding: 2.1875rem 2.5rem;
-  margin: 0 0 1.875rem 0;
-}
-.main-nav a {
-  text-decoration: none;
-  font-family: 'Open Sans', sans-serif;
-}
-.main-nav.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4.375rem;
-  border: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-}
-.main-nav.overlay a {
-  color: #ffffff;
-}
-.main-nav.overlay a:hover {
-  color: #222;
-  border-color: #ffffff;
-  background: #ffffff;
-  -webkit-transition: all 0.1s ease;
-       -o-transition: all 0.1s ease;
-          transition: all 0.1s ease;
-}
-
 .content {
-  margin-top: 8.4375rem;
+  margin-top: 5rem;
 }
 
 .scroll-down {
@@ -4320,29 +4287,13 @@ margin on the iframe, cause it breaks stuff. */
 .post + .post {
   margin: 2.5rem auto;
 }
-.post:after {
-  display: block;
-  content: "";
-  width: 0.4375rem;
-  height: 7px;
-  border: #E7EEF2 0.0625rem solid;
-  position: absolute;
-  bottom: -0.3125rem;
-  left: 50%;
-  margin-left: -0.3125rem;
-  background: #ffffff;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  -webkit-box-shadow: #ffffff 0 0 0 0.3125rem;
-          box-shadow: #ffffff 0 0 0 0.3125rem;
-}
 
 body:not(.post-template) .post-title {
-  font-size: 2.25rem;
+  font-size: 2.875rem;
 }
 
 .post-title {
-  font-weight: 600;
+  font-weight: 300;
 }
 .post-title a {
   text-decoration: none;
@@ -4355,6 +4306,8 @@ body:not(.post-template) .post-title {
 
 .read-more {
   text-decoration: none;
+  display: block;
+  margin: 2.5rem 0 1.875rem;
 }
 
 .post-meta {
@@ -5005,6 +4958,39 @@ body:not(.post-template) .post-title {
     display: none;
   }
 }
+.main-nav {
+  position: relative;
+  padding: 2.1875rem 2.5rem;
+  margin: 0 0 1.875rem 0;
+}
+.main-nav a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-nav.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4.375rem;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(transparent));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+}
+.main-nav.overlay a {
+  color: #ffffff;
+}
+.main-nav.overlay a:hover {
+  color: #222;
+  border-color: #ffffff;
+  background: #ffffff;
+  -webkit-transition: all 0.1s ease;
+       -o-transition: all 0.1s ease;
+          transition: all 0.1s ease;
+}
+
 .post-template .post {
   margin-top: 0;
   border-bottom: none;
@@ -5291,13 +5277,18 @@ pagination prev/next links */
 }
 
 .post p {
-  font-size: 1.25rem;
+  font-size: 1rem;
+}
+
+.sidebar hr {
+  margin: 1.25rem 0;
 }
 
 .site-footer {
   margin-top: 2.5rem;
-  padding: 1.25rem 0.625rem;
+  padding: 2.5rem 0.625rem;
   border-top: 1px solid #EBF2F6;
+  font-size: 0.75rem;
 }
 .site-footer:before, .site-footer:after {
   content: " ";
@@ -5312,17 +5303,4 @@ pagination prev/next links */
 }
 .site-footer a:hover {
   text-decoration: underline;
-}
-
-.poweredby {
-  display: block;
-  width: 45%;
-  float: right;
-  text-align: right;
-}
-
-.copyright {
-  display: block;
-  width: 45%;
-  float: left;
 }

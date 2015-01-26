@@ -1,8 +1,9 @@
 .site-footer {
   @include clearfix;
   margin-top: rem-calc(40);
-  padding: rem-calc(20 10);
+  padding: rem-calc(40 10);
   border-top: 1px solid #EBF2F6;
+  font-size: rem-calc(12);
 
   a {
     text-decoration: none;
@@ -11,17 +12,4 @@
       text-decoration: underline;
     }
   }
-}
-
-.poweredby {
-  display: block;
-  width: 45%;
-  float: right;
-  text-align: right;
-}
-
-.copyright {
-  display: block;
-  width: 45%;
-  float: left;
 }

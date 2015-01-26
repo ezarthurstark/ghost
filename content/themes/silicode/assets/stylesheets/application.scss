@@ -1,6 +1,7 @@
 //@import "colors";
 //@import "google-font";
 @import "../../bower_components/foundation/scss/foundation/functions";
+@import "base/colors";
 @import "custom-settings";
 //@import "icones";
 
@@ -15,7 +16,6 @@
 @import "../../bower_components/foundation/scss/foundation/components/visibility";
 
 //@import "base/normalize";
-@import "base/colors";
 @import "base/icons";
 @import "base/global";
 @import "base/utilities";
@@ -25,6 +25,7 @@
 @import "base/third-party";
 @import "base/responsive";
 
+@import "modules/nav";
 @import "modules/single-post";
 @import "modules/author";
 @import "modules/posts";
