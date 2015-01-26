@@ -5280,8 +5280,32 @@ pagination prev/next links */
   font-size: 1rem;
 }
 
-.sidebar hr {
+.search-form input[type="search"] {
+  margin-bottom: 1.25rem;
+  border: 0;
+  border-bottom: 1px solid #EFEFEF;
+  font-size: 1.125rem;
+  padding: 0.625rem;
+}
+.search-form input[type="search"]:focus {
+  border-color: #008CBA;
+}
+
+.m-sidebar {
+  text-align: center;
+}
+.m-sidebar hr {
   margin: 1.25rem 0;
+}
+
+.m-sidebar--social a {
+  color: #7f8c8d;
+}
+.m-sidebar--social a.twitter:hover {
+  color: #55acee;
+}
+.m-sidebar--social a.github:hover {
+  color: #333333;
 }
 
 .site-footer {

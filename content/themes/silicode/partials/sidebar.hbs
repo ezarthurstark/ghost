@@ -1,17 +1,12 @@
-<aside class="sidebar small-3 columns">
+<aside class="small-3 columns m-sidebar">
 
-  <div class="logo text-center">
-    {{#if @blog.logo}}
-      <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
-    {{/if}}
-    <p>{{@blog.description}}</p>
-  </div>
+  {{#if @blog.logo}}
+    <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+  {{/if}}
+  <p>{{@blog.description}}</p>
 
   <hr>
 
-  <div class="widget social_widget">
-    {{> sidebar-social }}
-  </div>
-
+  {{> sidebar-social }}
 
 </aside>

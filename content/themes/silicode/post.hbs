@@ -8,7 +8,10 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
   <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-    <a class="back-button icon-arrow-left" href="{{@blog.url}}">Accueil</a>
+    <a class="back-button" href="{{@blog.url}}">
+      <i class="fa fa-fw fa-angle-left"></i>
+      Accueil
+    </a>
   </nav>
 </header>
 
@@ -35,8 +38,18 @@ the {body} of the default.hbs template, which contains our header/footer. }}
       <p><a href="{{url}}">Lire plus d’articles</a> de cet auteur.</p>
       {{/if}}
       <div class="author-meta">
-        {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-        {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+        {{#if location}}
+          <span class="author-location">
+            <i class="fa fa-fw fa-briefcase"></i>
+            {{location}}
+          </span>
+        {{/if}}
+        {{#if website}}
+          <span class="author-link"><a href="{{website}}">
+            <i class="fa fa-fw fa-link"></i>
+            {{website}}
+          </a></span>
+        {{/if}}
       </div>
     </section>
 
