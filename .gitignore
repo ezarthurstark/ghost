@@ -1,4 +1,5 @@
 /content/data/ghost.db
+/content/*
 /config.js
 *.DS_Store
 /node_modules

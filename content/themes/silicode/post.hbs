@@ -52,27 +52,15 @@ the {body} of the default.hbs template, which contains our header/footer. }}
       {{/if}}
 
       <section class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-        <h4><a href="{{url}}" itemprop="name">{{name}}</a></h4>
-
-        {{#if bio}}
+        <h4>
+          <a href="{{url}}" itemprop="name">{{name}}</a>
+        </h4>
         <p>{{bio}}</p>
-        {{else}}
-        <p><a href="{{url}}">Lire plus d’articles</a> de cet auteur.</p>
+
+        {{#if location}}
+          <i class="fa fa-fw fa-briefcase"></i>
+          {{location}}
         {{/if}}
-        <div class="author-meta">
-          {{#if location}}
-            <span class="author-location">
-              <i class="fa fa-fw fa-briefcase"></i>
-              {{location}}
-            </span>
-          {{/if}}
-          {{#if website}}
-            <span class="author-link"><a href="{{website}}">
-              <i class="fa fa-fw fa-link"></i>
-              {{website}}
-            </a></span>
-          {{/if}}
-        </div>
       </section>
   </div>
   {{/author}}

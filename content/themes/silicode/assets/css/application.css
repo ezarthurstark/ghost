@@ -4123,23 +4123,6 @@ margin on the iframe, cause it breaks stuff. */
   display: none;
 }
 
-.blog-logo {
-  display: block;
-  float: left;
-  background: none !important;
-  border: none !important;
-}
-
-.blog-logo img {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  display: block;
-  height: 2.375rem;
-  padding: 0.0625rem 0 0.3125rem 0;
-  width: auto;
-}
-
 .back-button {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
@@ -4601,10 +4584,6 @@ body:not(.post-template) .post-title {
     padding: 10% 0;
   }
 
-  .blog-logo img {
-    padding: 4px 0;
-  }
-
   .page-title {
     font-size: 4rem;
     letter-spacing: -1px;
@@ -4716,14 +4695,6 @@ body:not(.post-template) .post-title {
     border-bottom: #e0e4e7 1px solid;
   }
 
-  .blog-logo {
-    padding: 10px 10px;
-  }
-
-  .blog-logo img {
-    height: 26px;
-  }
-
   .back-button,
   .subscribe-button {
     height: 44px;
@@ -4767,10 +4738,6 @@ body:not(.post-template) .post-title {
   .main-nav.overlay .back-button,
   .main-nav.overlay .subscribe-button {
     border-color: transparent;
-  }
-
-  .blog-logo img {
-    max-height: 80px;
   }
 
   .inner,
@@ -5314,6 +5281,11 @@ pre[class*='language-'] > code[data-language]::before {
 }
 .m-sidebar--social a.github:hover {
   color: #333333;
+}
+
+.m-sidebar--logo {
+  margin-bottom: 2.5rem;
+  display: block;
 }
 
 .post-template .post {
