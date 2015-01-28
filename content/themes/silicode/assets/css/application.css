@@ -4377,6 +4377,10 @@ body:not(.post-template) .post-title {
   line-height: 1.5em;
 }
 
+.error-image img {
+  width: 100%;
+}
+
 .pagination {
   position: relative;
   margin: 2.5rem auto;
@@ -4980,13 +4984,20 @@ body:not(.post-template) .post-title {
   background: transparent;
 }
 
+.author {
+  text-align: center;
+}
+@media only screen and (min-width: 40.063em) {
+  .author {
+    text-align: left;
+  }
+}
+
 .author-profile {
   padding: 0 0.9375rem 3.125rem 0.9375rem;
   border-bottom: #EBF2F6 0.0625rem solid;
   text-align: center;
 }
-
-/* Add a little circle in the middle of the border-bottom */
 .author-profile:after {
   display: block;
   content: "";
@@ -5015,7 +5026,12 @@ body:not(.post-template) .post-title {
           border-radius: 100%;
   overflow: hidden;
   z-index: 2;
-  margin: 0 0 1.25rem 0;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 40.063em) {
+  .author-image {
+    margin: 0 0 1.25rem 0;
+  }
 }
 .author-image .img {
   position: relative;
@@ -5030,7 +5046,6 @@ body:not(.post-template) .post-title {
   top: auto;
   width: 7.5rem;
   height: 7.5rem;
-  padding: 0.1875rem;
   margin: -6.875rem auto 0 auto;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -5321,7 +5336,6 @@ pre[class*='language-'] > code[data-language]::before {
   border: none;
 }
 .post-template .content {
-  overflow: hidden;
   margin-top: 0;
 }
 
@@ -5339,39 +5353,25 @@ pre[class*='language-'] > code[data-language]::before {
 }
 
 .post-footer {
-  position: relative;
-  margin: 6rem 0 0 0;
-  padding: 6rem 0 0 0;
+  margin-top: 5rem;
+  padding-top: 5rem;
   border-top: #EBF2F6 1px solid;
+}
+@media only screen and (max-width: 40em) {
+  .post-footer {
+    border-bottom: #EBF2F6 1px solid;
+    padding-bottom: 5rem;
+    margin-bottom: 1.25rem;
+  }
 }
 .post-footer h4 {
   font-size: 1.8rem;
   margin: 0;
 }
-.post-footer h4 a {
-  color: #2e2e2e;
-  text-decoration: none;
-}
-.post-footer h4 a::hover {
-  text-decoration: underline;
-}
 .post-footer p {
   margin: 1rem 0;
   font-size: 1.4rem;
   line-height: 1.75em;
-}
-.post-footer .author {
-  margin-right: 180px;
-}
-.post-footer .share a {
-  font-size: 1.8rem;
-  display: inline-block;
-  margin: 1rem 1.6rem 1.6rem 0;
-  color: #BBC7CC;
-  text-decoration: none;
-}
-.post-footer .share a:hover {
-  color: #50585D;
 }
 
 .author-meta {

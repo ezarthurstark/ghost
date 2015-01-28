@@ -1,0 +1,21 @@
+{{!< default}}
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+  <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+    <a class="back-button" href="{{@blog.url}}">
+      <i class="fa fa-fw fa-angle-left"></i>
+      Accueil
+    </a>
+  </nav>
+</header>
+
+<section class="row">
+    <section class="small-12 columns text-center">
+        <section class="error-message">
+            <h1 class="error-code">{{code}}</h1>
+            <h2 class="error-description">{{message}}</h2>
+        </section>
+        <figure class="error-image">
+            <img src="{{asset "images/matrix-fail.gif"}}" alt="">
+        </figure>
+    </section>
+</section>
