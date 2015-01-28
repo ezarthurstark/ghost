@@ -1,12 +1,8 @@
-<aside class="small-3 columns m-sidebar">
+{{#if @blog.logo}}
+  <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
+{{/if}}
+<p>{{@blog.description}}</p>
 
-  {{#if @blog.logo}}
-    <a href="{{@blog.url}}" class="logo"><img src="{{@blog.logo}}" alt="{{@blog.title}}"></a>
-  {{/if}}
-  <p>{{@blog.description}}</p>
+<hr>
 
-  <hr>
-
-  {{> sidebar-social }}
-
-</aside>
+{{> sidebar-social }}

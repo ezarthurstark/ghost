@@ -10,8 +10,10 @@
 </header>
 
 <main id="content" class="content row" role="main">
-  {{> "sidebar"}}
-  <div class="post-list small-8 columns">
+  <aside class="medium-3 columns m-sidebar">
+    {{> "sidebar"}}
+  </aside>
+  <div class="medium-8 columns post-list ">
     {{> "loop"}}
   </div>
 </main>

@@ -162,24 +162,19 @@ code, tt {
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 0.85em;
   white-space: pre-wrap;
-  border: #E3EDF3 rem-calc(1) solid;
-  background: #F7FAFB;
-  border-radius: rem-calc(2);
+  border-radius: .3em;
 }
 
 pre {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0 0 1.75em 0;
-  border: #E3EDF3 rem-calc(1) solid;
   width: 100%;
   padding: rem-calc(10);
   font-family: Inconsolata, monospace, sans-serif;
   font-size: 0.9em;
   white-space: pre;
   overflow: auto;
-  background: #F7FAFB;
-  border-radius: rem-calc(3);
 }
 
 pre code, tt {

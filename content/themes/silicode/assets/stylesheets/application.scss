@@ -21,11 +21,12 @@
 @import "base/third-party";
 @import "base/responsive";
 
-@import "modules/nav";
-@import "modules/single-post";
 @import "modules/author";
+@import "modules/footer";
+@import "modules/nav";
 @import "modules/posts";
+@import "modules/prism";
 @import "modules/search";
 @import "modules/sidebar";
-@import "modules/footer";
+@import "modules/single-post";
 

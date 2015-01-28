@@ -3,6 +3,8 @@ $font-weight-bold: bold !default;
 $font-family-sans-serif : Raleway, Helvetica Neue, Helvetica, sans-serif;
 $font-family-serif : Merriweather, Georgia, serif;
 
+
+
 // a. Base
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -11,6 +13,8 @@ $body-font-color: $oslogray;
 $body-font-family: $font-family-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
+
+
 
 // e. Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -31,16 +35,22 @@ $h4-font-size: rem-calc(25);
 $h5-font-size: rem-calc(20);
 $h6-font-size: rem-calc(20);
 
+$code-color: #f8f8f2;
+$code-background-color: #272822;
+$code-border-color: scale-color($code-background-color, $lightness: -10%);
+
+
+
 // 25. Reveal
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 $reveal-overlay-bg: rgba($white, .80);
 $reveal-overlay-bg-old: $white;
 
-$reveal-modal-padding: rem-calc(60);
+$reveal-modal-padding: rem-calc(40);
 $reveal-box-shadow: 0 0 5px rgba($black,.1);
 
-$reveal-close-font-size: rem-calc(80);
+$reveal-close-font-size: rem-calc(40);
 $reveal-close-top: rem-calc(20);
 $reveal-close-side: rem-calc(20);
 
