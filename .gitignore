@@ -1,5 +1,9 @@
-/content/data/ghost.db
-/content/*
-/config.js
 *.DS_Store
-/node_modules
+*.map
+*.sass-cache
+/node_modules/*
+/config.js
+/content/data/*
+/content/images/*
+/content/themes/silicode/assets/bower_components/*
+/content/themes/silicode/node_modules/*

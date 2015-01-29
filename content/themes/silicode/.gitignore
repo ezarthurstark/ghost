@@ -1,7 +1,0 @@
-/content/data/*
-/config.js
-*.DS_Store
-/node_modules
-/bower_components
-/.sass-cache
-*.map
