@@ -7,9 +7,15 @@
   text-align: center;
   background: #222 no-repeat center center;
   background-size: cover;
-  overflow: hidden;
+  overflow: visible;
   .inner {
     width: 80%;
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
   }
 }
 
@@ -223,17 +229,23 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-  text-decoration: none;
+  float: right;
   display: block;
-  margin: rem-calc(40 0 30)
+  padding: rem-calc(5);
+  span {
+    display: none;
+    @media #{$small} {
+      display: inline;
+    }
+  }
 }
 
 .post-meta {
   display: block;
   margin: rem-calc(28 0 0 0);
-  color: #9EABB3;
+  color: ligthen($oslogray,8%);
   a {
-    color: #9EABB3;
+    color:$oslogray;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -260,8 +272,8 @@ body:not(.post-template) .post-title {
   display: inline-block;
   margin-left: rem-calc(8);
   padding-left: rem-calc(12);
-  border-left: #d5dbde 1px solid;
   white-space: nowrap;
+  color: ligthen($oslogray,8%)
 }
 
 .user-image {

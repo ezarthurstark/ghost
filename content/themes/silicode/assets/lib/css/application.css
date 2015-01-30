@@ -471,7 +471,7 @@ body {
 
 body {
   background: #ffffff;
-  color: #7f8c8d;
+  color: #6E7276;
   padding: 0;
   margin: 0;
   font-family: Merriweather, Georgia, serif;
@@ -2496,7 +2496,7 @@ button::-moz-focus-inner {
 }
 
 .reveal-modal-bg {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -2508,7 +2508,7 @@ button::-moz-focus-inner {
   left: 0;
 }
 
-.reveal-modal, dialog {
+.reveal-modal {
   visibility: hidden;
   display: none;
   position: absolute;
@@ -2526,21 +2526,21 @@ button::-moz-focus-inner {
   padding: 3.75rem;
 }
 @media only screen and (max-width: 40em) {
-  .reveal-modal, dialog {
+  .reveal-modal {
     min-height: 100vh;
   }
 }
-.reveal-modal .column, dialog .column, .reveal-modal .columns, dialog .columns {
+.reveal-modal .column, .reveal-modal .columns {
   min-width: 0;
 }
-.reveal-modal > :first-child, dialog > :first-child {
+.reveal-modal > :first-child {
   margin-top: 0;
 }
-.reveal-modal > :last-child, dialog > :last-child {
+.reveal-modal > :last-child {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal, dialog {
+  .reveal-modal {
     width: 80%;
     max-width: 62.5rem;
     left: 0;
@@ -2549,23 +2549,23 @@ button::-moz-focus-inner {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal, dialog {
+  .reveal-modal {
     top: 6.25rem;
   }
 }
-.reveal-modal.radius, dialog.radius {
+.reveal-modal.radius {
   -webkit-border-radius: 3px;
           border-radius: 3px;
 }
-.reveal-modal.round, dialog.round {
+.reveal-modal.round {
   -webkit-border-radius: 1000px;
           border-radius: 1000px;
 }
-.reveal-modal.collapse, dialog.collapse {
+.reveal-modal.collapse {
   padding: 0;
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.tiny, dialog.tiny {
+  .reveal-modal.tiny {
     width: 30%;
     max-width: 62.5rem;
     left: 0;
@@ -2574,7 +2574,7 @@ button::-moz-focus-inner {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.small, dialog.small {
+  .reveal-modal.small {
     width: 40%;
     max-width: 62.5rem;
     left: 0;
@@ -2583,7 +2583,7 @@ button::-moz-focus-inner {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.medium, dialog.medium {
+  .reveal-modal.medium {
     width: 60%;
     max-width: 62.5rem;
     left: 0;
@@ -2592,7 +2592,7 @@ button::-moz-focus-inner {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.large, dialog.large {
+  .reveal-modal.large {
     width: 70%;
     max-width: 62.5rem;
     left: 0;
@@ -2601,7 +2601,7 @@ button::-moz-focus-inner {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.xlarge, dialog.xlarge {
+  .reveal-modal.xlarge {
     width: 95%;
     max-width: 62.5rem;
     left: 0;
@@ -2609,7 +2609,7 @@ button::-moz-focus-inner {
     margin: 0 auto;
   }
 }
-.reveal-modal.full, dialog.full {
+.reveal-modal.full {
   top: 0;
   left: 0;
   height: 100%;
@@ -2619,7 +2619,7 @@ button::-moz-focus-inner {
   margin-left: 0 !important;
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.full, dialog.full {
+  .reveal-modal.full {
     width: 100vw;
     max-width: 62.5rem;
     left: 0;
@@ -2627,7 +2627,7 @@ button::-moz-focus-inner {
     margin: 0 auto;
   }
 }
-.reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
+.reveal-modal .close-reveal-modal {
   font-size: 2.5rem;
   line-height: 1;
   position: absolute;
@@ -2638,31 +2638,6 @@ button::-moz-focus-inner {
   cursor: pointer;
 }
 
-dialog {
-  display: none;
-}
-dialog::backdrop, dialog + .backdrop {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #ffffff;
-  background: rgba(255, 255, 255, 0.8);
-  z-index: auto;
-  display: none;
-  left: 0;
-}
-dialog[open] {
-  display: block;
-}
-
-@media print {
-  dialog, .reveal-modal, dialog {
-    display: none;
-    background: #ffffff !important;
-  }
-}
 .text-left {
   text-align: left !important;
 }
@@ -3064,7 +3039,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #7f8c8d;
+  color: #6E7276;
   cursor: help;
 }
 
@@ -3756,7 +3731,7 @@ html {
 
 body {
   font-family: Merriweather, Georgia, serif;
-  color: #7f8c8d;
+  color: #6E7276;
   font-weight: normal;
   height: 100%;
   max-height: 100%;
@@ -4062,10 +4037,16 @@ margin on the iframe, cause it breaks stuff. */
   text-align: center;
   background: #222 no-repeat center center;
   background-size: cover;
-  overflow: hidden;
+  overflow: visible;
 }
 .main-header .inner {
   width: 80%;
+}
+.main-header canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
 }
 
 .content {
@@ -4282,18 +4263,26 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-  text-decoration: none;
+  float: right;
   display: block;
-  margin: 2.5rem 0 1.875rem;
+  padding: 0.3125rem;
+}
+.read-more span {
+  display: none;
+}
+@media only screen and (min-width: 40.063em) {
+  .read-more span {
+    display: inline;
+  }
 }
 
 .post-meta {
   display: block;
   margin: 1.75rem 0 0 0;
-  color: #9EABB3;
+  color: ligthen(#6E7276, 8%);
 }
 .post-meta a {
-  color: #9EABB3;
+  color: #6E7276;
   text-decoration: none;
 }
 .post-meta a:hover {
@@ -4319,8 +4308,8 @@ body:not(.post-template) .post-title {
   display: inline-block;
   margin-left: 0.5rem;
   padding-left: 0.75rem;
-  border-left: #d5dbde 1px solid;
   white-space: nowrap;
+  color: ligthen(#6E7276, 8%);
 }
 
 .user-image {
@@ -5069,6 +5058,7 @@ pagination prev/next links */
   position: relative;
   padding: 2.1875rem 2.5rem;
   margin: 0 0 1.875rem 0;
+  z-index: 1;
 }
 .main-nav a {
   text-decoration: none;
@@ -5267,7 +5257,10 @@ pre[class*='language-'] > code[data-language]::before {
 }
 
 .m-sidebar--social a {
-  color: #7f8c8d;
+  color: #82868b;
+}
+.m-sidebar--social a.agency:hover {
+  color: #304A45;
 }
 .m-sidebar--social a.twitter:hover {
   color: #55acee;
