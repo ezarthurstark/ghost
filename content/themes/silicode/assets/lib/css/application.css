@@ -986,15 +986,15 @@ button, .button {
   padding-bottom: 1.0625rem;
   padding-left: 2rem;
   font-size: 1rem;
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #304A45;
+  border-color: #263b37;
   color: #ffffff;
   -webkit-transition: background-color 300ms ease-out;
        -o-transition: background-color 300ms ease-out;
           transition: background-color 300ms ease-out;
 }
 button:hover, button:focus, .button:hover, .button:focus {
-  background-color: #007095;
+  background-color: #263b37;
 }
 button:hover, button:focus, .button:hover, .button:focus {
   color: #ffffff;
@@ -1097,8 +1097,8 @@ button.round, .button.round {
           border-radius: 1000px;
 }
 button.disabled, button[disabled], .button.disabled, .button[disabled] {
-  background-color: #008CBA;
-  border-color: #007095;
+  background-color: #304A45;
+  border-color: #263b37;
   color: #ffffff;
   cursor: default;
   opacity: 0.7;
@@ -1106,13 +1106,13 @@ button.disabled, button[disabled], .button.disabled, .button[disabled] {
           box-shadow: none;
 }
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #007095;
+  background-color: #263b37;
 }
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
   color: #ffffff;
 }
 button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-  background-color: #008CBA;
+  background-color: #304A45;
 }
 button.disabled.secondary, button[disabled].secondary, .button.disabled.secondary, .button[disabled].secondary {
   background-color: #e7e7e7;
@@ -1221,7 +1221,7 @@ button::-moz-focus-inner {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem;
+  max-width: 90rem;
 }
 .row:before, .row:after {
   content: " ";
@@ -2496,7 +2496,7 @@ button::-moz-focus-inner {
 }
 
 .reveal-modal-bg {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -2508,7 +2508,7 @@ button::-moz-focus-inner {
   left: 0;
 }
 
-.reveal-modal {
+.reveal-modal, dialog {
   visibility: hidden;
   display: none;
   position: absolute;
@@ -2526,90 +2526,90 @@ button::-moz-focus-inner {
   padding: 3.75rem;
 }
 @media only screen and (max-width: 40em) {
-  .reveal-modal {
+  .reveal-modal, dialog {
     min-height: 100vh;
   }
 }
-.reveal-modal .column, .reveal-modal .columns {
+.reveal-modal .column, dialog .column, .reveal-modal .columns, dialog .columns {
   min-width: 0;
 }
-.reveal-modal > :first-child {
+.reveal-modal > :first-child, dialog > :first-child {
   margin-top: 0;
 }
-.reveal-modal > :last-child {
+.reveal-modal > :last-child, dialog > :last-child {
   margin-bottom: 0;
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal {
+  .reveal-modal, dialog {
     width: 80%;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal {
+  .reveal-modal, dialog {
     top: 6.25rem;
   }
 }
-.reveal-modal.radius {
+.reveal-modal.radius, dialog.radius {
   -webkit-border-radius: 3px;
           border-radius: 3px;
 }
-.reveal-modal.round {
+.reveal-modal.round, dialog.round {
   -webkit-border-radius: 1000px;
           border-radius: 1000px;
 }
-.reveal-modal.collapse {
+.reveal-modal.collapse, dialog.collapse {
   padding: 0;
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.tiny {
+  .reveal-modal.tiny, dialog.tiny {
     width: 30%;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.small {
+  .reveal-modal.small, dialog.small {
     width: 40%;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.medium {
+  .reveal-modal.medium, dialog.medium {
     width: 60%;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.large {
+  .reveal-modal.large, dialog.large {
     width: 70%;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.xlarge {
+  .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
-.reveal-modal.full {
+.reveal-modal.full, dialog.full {
   top: 0;
   left: 0;
   height: 100%;
@@ -2619,15 +2619,15 @@ button::-moz-focus-inner {
   margin-left: 0 !important;
 }
 @media only screen and (min-width: 40.063em) {
-  .reveal-modal.full {
+  .reveal-modal.full, dialog.full {
     width: 100vw;
-    max-width: 62.5rem;
+    max-width: 90rem;
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 }
-.reveal-modal .close-reveal-modal {
+.reveal-modal .close-reveal-modal, dialog .close-reveal-modal {
   font-size: 2.5rem;
   line-height: 1;
   position: absolute;
@@ -2638,6 +2638,31 @@ button::-moz-focus-inner {
   cursor: pointer;
 }
 
+dialog {
+  display: none;
+}
+dialog::backdrop, dialog + .backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: auto;
+  display: none;
+  left: 0;
+}
+dialog[open] {
+  display: block;
+}
+
+@media print {
+  dialog, .reveal-modal, dialog {
+    display: none;
+    background: #ffffff !important;
+  }
+}
 .text-left {
   text-align: left !important;
 }
@@ -2850,12 +2875,12 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008CBA;
+  color: #304A45;
   text-decoration: none;
   line-height: inherit;
 }
 a:hover, a:focus {
-  color: #0078a0;
+  color: #29403b;
 }
 a img {
   border: none;
@@ -5246,7 +5271,7 @@ pre[class*='language-'] > code[data-language]::before {
   padding: 0.625rem;
 }
 .search-form input[type="search"]:focus {
-  border-color: #008CBA;
+  border-color: #304A45;
 }
 
 .m-sidebar {
@@ -5316,7 +5341,7 @@ pre[class*='language-'] > code[data-language]::before {
   border-top: #EBF2F6 1px solid;
   width: 100%;
   margin: 0;
-  max-width: 62.5rem;
+  max-width: 90rem;
 }
 .post-navigation:before, .post-navigation:after {
   content: " ";
