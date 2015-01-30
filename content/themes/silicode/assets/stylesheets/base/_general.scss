@@ -223,9 +223,15 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-  text-decoration: none;
+  float: right;
   display: block;
-  margin: rem-calc(40 0 30)
+  padding: rem-calc(5);
+  span {
+    display: none;
+    @media #{$small} {
+      display: inline;
+    }
+  }
 }
 
 .post-meta {
@@ -260,7 +266,6 @@ body:not(.post-template) .post-title {
   display: inline-block;
   margin-left: rem-calc(8);
   padding-left: rem-calc(12);
-  border-left: #d5dbde 1px solid;
   white-space: nowrap;
 }
 

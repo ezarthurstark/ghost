@@ -4282,9 +4282,17 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-  text-decoration: none;
+  float: right;
   display: block;
-  margin: 2.5rem 0 1.875rem;
+  padding: 0.3125rem;
+}
+.read-more span {
+  display: none;
+}
+@media only screen and (min-width: 40.063em) {
+  .read-more span {
+    display: inline;
+  }
 }
 
 .post-meta {
@@ -4319,7 +4327,6 @@ body:not(.post-template) .post-title {
   display: inline-block;
   margin-left: 0.5rem;
   padding-left: 0.75rem;
-  border-left: #d5dbde 1px solid;
   white-space: nowrap;
 }
 
