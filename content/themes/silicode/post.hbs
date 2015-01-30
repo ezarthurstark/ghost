@@ -30,9 +30,22 @@ the {body} of the default.hbs template, which contains our header/footer. }}
         {{content}}
       </section>
 
+      <nav class="post-navigation">
+        <span id="curr-post-uuid" class="hide">{{uuid}}</span>
+        <a class="prev-post">
+          <i class="fa fa-fw fa-angle-left"></i>
+          Article précédent
+        </a>
+        <a class="next-post">
+          Article suivant
+          <i class="fa fa-fw fa-angle-right"></i>
+        </a>
+      </nav>
+
       <footer class="post-footer">
+
         <section>
-          <h4>S’abonner</h4>
+          <h4 class="l-title">S’abonner</h4>
           <p>Vous avez appris quelque chose de nouveau en lisant cet article ? N’hésitez pas à <a href="{{@blog.url}}/rss/">vous abonner au flux rss</a> pour recevoir les nouvelles publications.</p>
         </section>
       </footer>

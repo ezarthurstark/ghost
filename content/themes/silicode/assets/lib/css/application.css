@@ -4829,10 +4829,6 @@ body:not(.post-template) .post-title {
     margin-bottom: 0;
   }
 
-  .post-template .site-footer {
-    margin-top: 0;
-  }
-
   .post-content img {
     padding: 0;
   }
@@ -4892,10 +4888,6 @@ body:not(.post-template) .post-title {
 
   .page-number {
     display: block;
-  }
-
-  .site-footer {
-    margin-top: 3rem;
   }
 
   .author-profile {
@@ -5260,6 +5252,7 @@ pre[class*='language-'] > code[data-language]::before {
   border: 0;
   border-bottom: 1px solid #EFEFEF;
   font-size: 1.125rem;
+  width: 100%;
   padding: 0.625rem;
 }
 .search-form input[type="search"]:focus {
@@ -5324,8 +5317,38 @@ pre[class*='language-'] > code[data-language]::before {
   margin: 0 -13%;
 }
 
+.post-navigation {
+  margin-top: 1.25rem;
+  padding-top: 2.5rem;
+  border-top: #EBF2F6 1px solid;
+  width: 100%;
+  margin: 0;
+  max-width: 62.5rem;
+}
+.post-navigation:before, .post-navigation:after {
+  content: " ";
+  display: table;
+}
+.post-navigation:after {
+  clear: both;
+}
+.post-navigation .prev-post,
+.post-navigation .next-post {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 50%;
+  float: left;
+}
+.post-navigation .next-post {
+  text-align: right;
+  float: right;
+}
+.post-navigation a {
+  display: block;
+}
+
 .post-footer {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   padding-top: 5rem;
   border-top: #EBF2F6 1px solid;
 }
@@ -5336,14 +5359,12 @@ pre[class*='language-'] > code[data-language]::before {
     margin-bottom: 1.25rem;
   }
 }
-.post-footer h4 {
+.post-footer .l-title {
   font-size: 1.8rem;
   margin: 0;
 }
 .post-footer p {
   margin: 1rem 0;
-  font-size: 1.4rem;
-  line-height: 1.75em;
 }
 
 .author-meta {
