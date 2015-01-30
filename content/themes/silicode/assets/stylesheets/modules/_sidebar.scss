@@ -10,6 +10,9 @@
   a {
     color: lighten($oslogray, 8%);
 
+    &.agency:hover {
+      color: #304A45;
+    }
     &.twitter:hover {
       color: #55acee;
     }

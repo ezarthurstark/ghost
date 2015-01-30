@@ -5258,6 +5258,9 @@ pre[class*='language-'] > code[data-language]::before {
 .m-sidebar--social a {
   color: #82868b;
 }
+.m-sidebar--social a.agency:hover {
+  color: #304A45;
+}
 .m-sidebar--social a.twitter:hover {
   color: #55acee;
 }
