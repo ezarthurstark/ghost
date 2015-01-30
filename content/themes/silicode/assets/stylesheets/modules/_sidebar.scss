@@ -8,7 +8,7 @@
 
 .m-sidebar--social {
   a {
-    color: $oslogray;
+    color: lighten($oslogray, 8%);
 
     &.twitter:hover {
       color: #55acee;
