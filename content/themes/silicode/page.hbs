@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{#post}}
+
+  <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+      <a class="back-button" href="{{@blog.url}}">
+        <i class="fa fa-fw fa-angle-left"></i>
+        Home
+      </a>
+      <a class="subscribe-button" href="{{@blog.url}}/rss/">
+        <i class="fa fa-fw fa-rss"></i>
+        S’abonner
+      </a>
+    </nav>
+  </header>
+
+  <main class="content row" role="main">
+    <div class="small-12 columns">
+      <article class="{{post_class}}">
+        {{! Everything inside the #post tags pulls data from the post }}
+
+        <header class="post-header">
+          <h1 class="post-title">{{title}}</h1>
+        </header>
+
+        <section class="post-content">
+          {{content}}
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+{{/post}}

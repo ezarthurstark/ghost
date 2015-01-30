@@ -1,0 +1,15 @@
+.search-form {
+
+  input[type="search"] {
+    margin-bottom: rem-calc(20);
+    border: 0;
+    border-bottom: 1px solid $silver;
+    font-size: rem-calc(18);
+    width: 100%;
+    padding: rem-calc(10);
+    &:focus {
+      border-color: $primary-color;
+    }
+  }
+
+}

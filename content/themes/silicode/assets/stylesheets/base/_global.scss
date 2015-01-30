@@ -1,0 +1,255 @@
+/* ==========================================================================
+ 2. General - Setting up some base styles
+ ========================================================================== */
+
+ html {
+  height: 100%;
+  max-height: 100%;
+  //font-size: 62.5%;
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  font-family: $body-font-family;
+  color: $body-font-color;
+  font-weight: $body-font-weight;
+  height: 100%;
+  max-height: 100%;
+  letter-spacing: 0.01rem;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  -webkit-font-smoothing: antialiased
+}
+
+h1, h2, h3,
+h4, h5, h6 {
+  font-family: $header-font-family;
+  color: $header-font-color;
+  line-height: $header-line-height;
+  margin-top: $header-top-margin;
+  margin-bottom: $header-bottom-margin;
+  text-rendering: $header-text-rendering;
+  margin-left: 0;
+  margin-right: 0;
+  -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+  -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
+}
+
+h1 {
+  font-size: $h1-font-size;
+  letter-spacing: rem-calc(-2);
+  text-indent: rem-calc(-3);
+}
+
+h2 {
+  font-size: $h2-font-size;
+  letter-spacing: rem-calc(-1);
+}
+
+h3 {
+  font-size: $h3-font-size;
+}
+
+h4 {
+  font-size: $h4-font-size;
+}
+
+h5 {
+  font-size: $h5-font-size;
+}
+
+h6 {
+  font-size: $h6-font-size;
+}
+
+a {
+  color: #4A4A4A;
+  transition: color ease 0.3s;
+}
+
+a:hover {
+  color: #111;
+}
+
+p, ul, ol, dl {
+  -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+  -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+  margin: 0 0 1.75em 0;
+}
+
+ol, ul {
+  padding-left: rem-calc(30);
+}
+
+ol ol, ul ul,
+ul ol, ol ul {
+  margin: 0 0 0.4em 0;
+  padding-left: 2em;
+}
+
+dl dt {
+  float: left;
+  width: rem-calc(180);
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  clear: left;
+  text-align: right;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+dl dd {
+  margin-left: rem-calc(200);
+  margin-bottom: 1em
+}
+
+li {
+  margin: 0.4em 0;
+}
+
+li li {
+  margin: 0;
+}
+
+hr {
+  display: block;
+  height: rem-calc(1);
+  border: 0;
+  border-top: $silver rem-calc(1) solid;
+  margin: 3.2em 0;
+  padding: 0;
+}
+
+blockquote {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1.75em 0 1.75em -2.2em;
+  padding: 0 0 0 1.75em;
+  border-left: #4A4A4A 0.4em solid;
+}
+
+blockquote p {
+  margin: 0.8em 0;
+  font-style: italic;
+}
+
+blockquote small {
+  display: inline-block;
+  margin: 0.8em 0 0.8em 1.5em;
+  font-size: 0.9em;
+  color: #CCC;
+}
+
+blockquote small:before { content: "\2014 \00A0"; }
+
+blockquote cite {
+  font-weight: 700;
+}
+
+blockquote cite a { font-weight: normal; }
+
+mark {
+  background-color: #FFC336;
+}
+
+code, tt {
+  padding: rem-calc(1 3);
+  font-family: Inconsolata, monospace, sans-serif;
+  font-size: 0.85em;
+  white-space: pre-wrap;
+  border-radius: .3em;
+}
+
+pre {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 0 1.75em 0;
+  width: 100%;
+  padding: rem-calc(10);
+  font-family: Inconsolata, monospace, sans-serif;
+  font-size: 0.9em;
+  white-space: pre;
+  overflow: auto;
+}
+
+pre code, tt {
+  font-size: inherit;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+kbd {
+  display: inline-block;
+  margin-bottom: 0.4em;
+  padding: rem-calc(1 8);
+  border: #CCC rem-calc(1) solid;
+  color: #666;
+  text-shadow: $white rem-calc(0 1 0);
+  font-size: 0.9em;
+  font-weight: 700;
+  background: #F4F4F4;
+  border-radius: rem-calc(4);
+  box-shadow:
+  0 1px 0 rgba(0, 0, 0, 0.2),
+  0 1px 0 0 $white inset;
+}
+
+table th,
+table td {
+  padding: rem-calc(8);
+  line-height: rem-calc(20);
+  text-align: left;
+  vertical-align: top;
+  border-top: $silver rem-calc(1) solid;
+}
+
+table th { color: $black; }
+
+table {
+  box-sizing: border-box;
+  margin: 1.75em 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: transparent;
+
+  caption + thead tr:first-child,
+  colgroup + thead tr:first-child,
+  thead:first-child tr:first-child {
+    th, td {
+      border-top: 0;
+    }
+  }
+}
+
+table tbody + tbody { border-top: $silver rem-calc(2) solid; }
+
+table table table { background-color: $white; }
+
+table tbody > tr:nth-child(odd) > td,
+table tbody > tr:nth-child(odd) > th {
+  background-color: #F6F6F6;
+}
+
+table.plain tbody > tr:nth-child(odd) > td,
+table.plain tbody > tr:nth-child(odd) > th {
+ background: transparent;
+}
+
+iframe, .fluid-width-video-wrapper {
+  display: block;
+  margin: 1.75em 0;
+}
+
+/* When a video is inside the fitvids wrapper, drop the
+margin on the iframe, cause it breaks stuff. */
+.fluid-width-video-wrapper iframe {
+  margin: 0;
+}

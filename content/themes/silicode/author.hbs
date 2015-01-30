@@ -1,0 +1,51 @@
+{{!< default}}
+
+{{#author}}
+  <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
+    <nav class="main-nav overlay clearfix">
+      <a class="back-button" href="{{@blog.url}}">
+        <i class="fa fa-fw fa-angle-left"></i>
+        Accueil
+      </a>
+      <a class="subscribe-button" href="{{@blog.url}}/rss/">
+        <i class="fa fa-fw fa-rss"></i>
+        S’abonner
+      </a>
+    </nav>
+  </header>
+
+  <section class="author-profile inner">
+    {{#if image}}
+      <figure class="author-image">
+        <img src="{{image}}" alt="{{name}} chez Silicon Salad">
+        <figcation class="hidden">Photo de {{name}} chez Silicon Salad</figcation>
+      </figure>
+    {{/if}}
+    <h1 class="author-title">{{name}}</h1>
+    <p class="author-bio">{{bio}}</p>
+    <div class="author-meta">
+      {{#if location}}
+        <span class="author-location">
+          <i class="fa fa-fw fa-briefcase"></i>
+          {{location}}
+        </span>
+      {{/if}}
+      {{#if website}}
+        <span class="author-link"><a href="{{website}}">
+          <i class="fa fa-fw fa-twitter"></i>
+          {{website}}
+        </a></span>
+      {{/if}}
+      <span class="author-stats">
+        <i class="fa fa-fw fa-bar-chart"></i>
+        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+      </span>
+    </div>
+  </section>
+{{/author}}
+
+<main class="content row" role="main">
+  <div class="small-12 columns">
+    {{> "loop"}}
+  </div>
+</main>

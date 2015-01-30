@@ -1,0 +1,57 @@
+$font-weight-normal: normal !default;
+$font-weight-bold: bold !default;
+$font-family-sans-serif : Raleway, Helvetica Neue, Helvetica, sans-serif;
+$font-family-serif : Merriweather, Georgia, serif;
+
+
+
+// a. Base
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$body-bg: $white;
+$body-font-color: $oslogray;
+$body-font-family: $font-family-serif;
+$body-font-weight: $font-weight-normal;
+$body-font-style: normal;
+
+
+
+// e. Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$header-font-family: $font-family-sans-serif;
+$header-font-weight: $font-weight-normal;
+$header-font-style: normal;
+$header-font-color: $capecod;
+$header-line-height: 1.15em;
+$header-top-margin: 0;
+$header-bottom-margin: .4em;
+$header-text-rendering: optimizeLegibility;
+
+$h1-font-size: rem-calc(50);
+$h2-font-size: rem-calc(36);
+$h3-font-size: rem-calc(30);
+$h4-font-size: rem-calc(25);
+$h5-font-size: rem-calc(20);
+$h6-font-size: rem-calc(20);
+
+$code-color: #f8f8f2;
+$code-background-color: #272822;
+$code-border-color: scale-color($code-background-color, $lightness: -10%);
+
+
+
+// 25. Reveal
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+$reveal-overlay-bg: rgba($white, .80);
+$reveal-overlay-bg-old: $white;
+
+$reveal-modal-padding: rem-calc(40);
+$reveal-box-shadow: 0 0 5px rgba($black,.1);
+
+$reveal-close-font-size: rem-calc(40);
+$reveal-close-top: rem-calc(20);
+$reveal-close-side: rem-calc(20);
+
+$reveal-border-color: $white;

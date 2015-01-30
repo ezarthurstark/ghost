@@ -1,0 +1,83 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+  <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+    <a class="back-button" href="{{@blog.url}}">
+      <i class="fa fa-fw fa-angle-left"></i>
+      Accueil
+    </a>
+  </nav>
+</header>
+
+<main class="content row" role="main" itemscope="" itemtype="http://schema.org/BlogPosting">
+  <div class="medium-8 medium-push-4 columns">
+    <article class="{{post_class}}">
+
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">{{title}}</h1>
+        <section class="post-meta">
+          <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" | "}}
+        </section>
+      </header>
+
+      <section class="post-content" itemprop="articleBody">
+        {{content}}
+      </section>
+
+      <nav class="post-navigation">
+        <span id="curr-post-uuid" class="hide">{{uuid}}</span>
+        <a class="prev-post">
+          <i class="fa fa-fw fa-angle-left"></i>
+          Article précédent
+        </a>
+        <a class="next-post">
+          Article suivant
+          <i class="fa fa-fw fa-angle-right"></i>
+        </a>
+      </nav>
+
+      <footer class="post-footer">
+
+        <section>
+          <h4 class="l-title">S’abonner</h4>
+          <p>Vous avez appris quelque chose de nouveau en lisant cet article ? N’hésitez pas à <a href="{{@blog.url}}/rss/">vous abonner au flux rss</a> pour recevoir les nouvelles publications.</p>
+        </section>
+      </footer>
+
+    </article>
+  </div>
+
+  {{#author}}
+  <div class="medium-4 medium-pull-8 columns">
+      {{#if image}}
+      <figure class="author-image">
+        <a class="img" href="{{url}}">
+          <img src="{{image}}" alt="Photo du développeur {{name}}">
+          <figcation class="hidden">Photo de {{name}}</figcation>
+        </a>
+      </figure>
+      {{/if}}
+
+      <section class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+        <h4>
+          <a href="{{url}}" itemprop="name">{{name}}</a>
+        </h4>
+        <p>{{bio}}</p>
+
+        {{#if location}}
+          <i class="fa fa-fw fa-briefcase"></i>
+          {{location}}
+        {{/if}}
+      </section>
+  </div>
+  {{/author}}
+
+</main>
+
+{{/post}}

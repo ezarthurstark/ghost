@@ -1,0 +1,15 @@
+.site-footer {
+  @include clearfix;
+  margin-top: rem-calc(40);
+  padding: rem-calc(40 10);
+  border-top: 1px solid #EBF2F6;
+  font-size: rem-calc(12);
+
+  a {
+    text-decoration: none;
+    font-weight: $font-weight-bold;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

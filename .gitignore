@@ -1,0 +1,9 @@
+*.DS_Store
+*.map
+*.sass-cache
+/node_modules/*
+/config.js
+/content/data/*
+/content/images/*
+/content/themes/silicode/assets/bower_components/*
+/content/themes/silicode/node_modules/*

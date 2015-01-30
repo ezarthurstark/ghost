@@ -1,0 +1,25 @@
+.m-sidebar {
+  text-align: center;
+
+  hr {
+    margin: rem-calc(20 0)
+  }
+}
+
+.m-sidebar--social {
+  a {
+    color: $oslogray;
+
+    &.twitter:hover {
+      color: #55acee;
+    }
+    &.github:hover {
+      color: #333333;
+    }
+  }
+}
+
+.m-sidebar--logo {
+  margin-bottom: rem-calc(40);
+  display: block;
+}
