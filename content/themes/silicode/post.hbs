@@ -43,8 +43,38 @@ the {body} of the default.hbs template, which contains our header/footer. }}
         </a>
       </nav>
 
-      <footer class="post-footer">
 
+      <div class="post-comments">
+        <hr>
+        <h4>Vous souhaitez réagir ?</h4>
+
+        <div id="disqus_thread">
+          <form onsubmit="my.loadDisqus();return false;">
+            <button type="submit" class="button">
+              Afficher les commentaires
+              <i class="fa fa-fw fa-angle-down"></i>
+            </button>
+          </form>
+        </div>
+        <script>
+          var disqus_shortname = "techsiliconsalad";
+          var disqus_url = "{{@blog.url}}";
+          var disqus_identifier = '{{post.id}}';
+          var my = my || {};
+          my.loadDisqus = function() {
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+          };
+        </script>
+      </div>
+
+
+
+
+      <footer class="post-footer">
         <section>
           <h4 class="l-title">S’abonner</h4>
           <p>Vous avez appris quelque chose de nouveau en lisant cet article ? N’hésitez pas à <a href="{{@blog.url}}/rss/">vous abonner au flux rss</a> pour recevoir les nouvelles publications.</p>
