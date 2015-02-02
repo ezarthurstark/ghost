@@ -79,7 +79,7 @@
   height: rem-calc(38);
   padding: rem-calc(0 15 0 10);
   border: transparent rem-calc(1) solid;
-  color: #9EABB3;
+  color: $oslogray;
   text-align: center;
   font-size: rem-calc(12);
   text-transform: uppercase;
@@ -105,7 +105,7 @@
   height: rem-calc(38);
   padding: rem-calc(0 20);
   border: transparent rem-calc(1) solid;
-  color: #9EABB3;
+  color: $oslogray;
   text-align: center;
   font-size: rem-calc(12);
   text-transform: uppercase;
@@ -139,7 +139,7 @@
 .subscribe-button{
   &:hover{
     border-color: #bfc8cd;
-    color: #9EABB3;
+    color: $oslogray;
   }
 }
 

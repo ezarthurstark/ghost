@@ -16,7 +16,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 </header>
 
 <main class="content row" role="main" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="medium-8 medium-push-4 columns">
+  <div class="medium-8 medium-push-2 columns">
     <article class="{{post_class}}">
 
       <header class="post-header">
@@ -85,7 +85,9 @@ the {body} of the default.hbs template, which contains our header/footer. }}
   </div>
 
   {{#author}}
-  <div class="medium-4 medium-pull-8 columns">
+  <div class="row">
+    <div class="medium-8 medium-push-2 columns">
+      <hr>
       {{#if image}}
       <figure class="author-image">
         <a class="img" href="{{url}}">
@@ -99,13 +101,13 @@ the {body} of the default.hbs template, which contains our header/footer. }}
         <h4>
           <a href="{{url}}" itemprop="name">{{name}}</a>
         </h4>
+{{!--         {{#if location}}
+        <i class="fa fa-fw fa-briefcase"></i>
+        {{location}}
+        {{/if}} --}}
         <p>{{bio}}</p>
-
-        {{#if location}}
-          <i class="fa fa-fw fa-briefcase"></i>
-          {{location}}
-        {{/if}}
       </section>
+    </div>
   </div>
   {{/author}}
 
