@@ -16,7 +16,7 @@ the {body} of the default.hbs template, which contains our header/footer. }}
 </header>
 
 <main class="content row" role="main" itemscope="" itemtype="http://schema.org/BlogPosting">
-  <div class="medium-8 medium-push-2 columns">
+  <div class="medium-8 medium-centered columns">
     <article class="{{post_class}}">
 
       <header class="post-header">
@@ -43,11 +43,9 @@ the {body} of the default.hbs template, which contains our header/footer. }}
         </a>
       </nav>
 
-
       <div class="post-comments">
         <hr>
         <h4>Vous souhaitez réagir ?</h4>
-
         <div id="disqus_thread">
           <form onsubmit="my.loadDisqus();return false;">
             <button type="submit" class="button">
@@ -71,45 +69,59 @@ the {body} of the default.hbs template, which contains our header/footer. }}
         </script>
       </div>
 
-
-
-
       <footer class="post-footer">
-        <section>
-          <h4 class="l-title">S’abonner</h4>
-          <p>Vous avez appris quelque chose de nouveau en lisant cet article ? N’hésitez pas à <a href="{{@blog.url}}/rss/">vous abonner au flux rss</a> pour recevoir les nouvelles publications.</p>
+        <section class="row">
+          <div class="medium-6 columns">
+            <h4 class="l-title">Partager</h4>
+            <ul class="inline-list">
+              <li>
+                <a href="http://twitter.com/home?status={{title}}%20{{@blog.url}}{{url}}%20@IT_SiliconSalad" target="_blank" class="button hollow">
+                  <i class="fa fa-fw fa-twitter"></i>
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a href="https://plus.google.com/share?url={{title}}%20{{@blog.url}}{{url}}" target="_blank" class="button hollow">
+                  <i class="fa fa-fw fa-google-plus"></i>
+                  Google+
+                </a>
+              </li>
+            </ul>
+            <h4 class="l-title">S’abonner</h4>
+            <p>Vous avez appris quelque chose de nouveau en lisant cet article ? N’hésitez pas à <a href="{{@blog.url}}/rss/">vous abonner au flux rss</a> pour recevoir les nouvelles publications.</p>
+          </div>
+          <div class="medium-6 columns">
+            {{#author}}
+              {{#if image}}
+              <figure class="author-image">
+                <a class="img" href="{{url}}">
+                  <img src="{{image}}" alt="Photo du développeur {{name}}">
+                  <figcation class="hidden">Photo de {{name}}</figcation>
+                </a>
+              </figure>
+              {{/if}}
+              <section class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+                <h4>
+                  Publié par
+                  <a href="{{url}}" itemprop="name">{{name}}</a>
+                </h4>
+                {{#if location}}
+                <i class="fa fa-fw fa-briefcase"></i>
+                {{location}}
+                {{/if}}
+                <p>{{bio}}</p>
+                <a href="https://twitter.com/IT_SiliconSalad">
+                  Poser une question
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </section>
+            {{/author}}
+          </div>
         </section>
       </footer>
 
     </article>
   </div>
-
-  {{#author}}
-  <div class="row">
-    <div class="medium-8 medium-push-2 columns">
-      <hr>
-      {{#if image}}
-      <figure class="author-image">
-        <a class="img" href="{{url}}">
-          <img src="{{image}}" alt="Photo du développeur {{name}}">
-          <figcation class="hidden">Photo de {{name}}</figcation>
-        </a>
-      </figure>
-      {{/if}}
-
-      <section class="author" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-        <h4>
-          <a href="{{url}}" itemprop="name">{{name}}</a>
-        </h4>
-{{!--         {{#if location}}
-        <i class="fa fa-fw fa-briefcase"></i>
-        {{location}}
-        {{/if}} --}}
-        <p>{{bio}}</p>
-      </section>
-    </div>
-  </div>
-  {{/author}}
 
 </main>
 

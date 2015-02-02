@@ -4410,85 +4410,27 @@ body:not(.post-template) .post-title {
   width: 100%;
 }
 
-.pagination {
-  position: relative;
-  margin: 2.5rem auto;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8125rem;
+.button.hollow {
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: transparent;
+  text-transform: uppercase;
   color: #9EABB3;
-  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+       -o-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+  font-size: 0.75rem;
+  padding: 0px 0.9375rem 0px 0.625rem;
+  line-height: 2.1875rem;
 }
-.pagination .pagination a {
+.button.hollow:hover {
   color: #9EABB3;
-  -webkit-transition: all 0.2s ease;
-       -o-transition: all 0.2s ease;
-          transition: all 0.2s ease;
+  border-color: #9EABB3;
 }
-
-.older-posts,
-.newer-posts {
-  position: absolute;
-  display: inline-block;
-  padding: 0 0.9375rem;
-  border: #bfc8cd 0.0625rem solid;
-  text-decoration: none;
-  -webkit-border-radius: 0.25rem;
-          border-radius: 0.25rem;
-  -webkit-transition: border ease 0.3s;
-       -o-transition: border ease 0.3s;
-          transition: border ease 0.3s;
-}
-
-.older-posts {
-  right: 0;
-}
-
-.page-number {
-  display: inline-block;
-  padding: 0.125rem 0;
-  min-width: 6.25rem;
-}
-
-.newer-posts {
-  left: 0;
-}
-
-.older-posts:hover,
-.newer-posts:hover {
-  color: #889093;
-  border-color: #98a0a4;
-}
-
-.extra-pagination {
-  display: none;
-  border-bottom: #EBF2F6 0.0625rem solid;
-}
-.extra-pagination:after {
-  display: block;
-  content: "";
-  width: 7px;
-  height: 7px;
-  border: #E7EEF2 0.0625rem solid;
-  position: absolute;
-  bottom: -0.3125rem;
-  left: 50%;
-  margin-left: -0.3125rem;
-  background: #ffffff;
-  -webkit-border-radius: 100%;
-          border-radius: 100%;
-  -webkit-box-shadow: #ffffff 0 0 0 0.3125rem;
-          box-shadow: #ffffff 0 0 0 0.3125rem;
-}
-.extra-pagination .pagination {
-  width: auto;
-}
-
-/* On page2+ make all the headers smaller */
-.archive-template .main-header {
-  max-height: 30%;
-}
-.archive-template .extra-pagination {
-  display: block;
+.button.hollow:focus {
+  color: #242020;
+  border-color: #242020;
 }
 
 /* ==========================================================================
@@ -5319,7 +5261,6 @@ pre[class*='language-'] > code[data-language]::before {
 
 .m-sidebar--social a {
   color: #878c90;
-  font-size: 0.5625rem;
 }
 .m-sidebar--social a.agency:hover {
   color: #304A45;
