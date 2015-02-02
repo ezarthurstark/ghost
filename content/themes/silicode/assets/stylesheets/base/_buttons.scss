@@ -1,0 +1,21 @@
+.button {
+  &.hollow {
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #9EABB3;
+    transition: all 0.3s ease 0s;
+    font-size: 0.75rem;
+    padding: 0px 0.9375rem 0px 0.625rem;
+    line-height: 2.1875rem;
+    &:hover {
+      color: #9EABB3;
+      border-color: #9EABB3;
+    }
+    &:focus {
+      color: $black;
+      border-color: $black;
+    }
+  }
+}

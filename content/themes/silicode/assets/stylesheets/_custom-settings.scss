@@ -1,7 +1,7 @@
 $font-weight-normal: normal !default;
 $font-weight-bold: bold !default;
-$font-family-sans-serif : Raleway, Helvetica Neue, Helvetica, sans-serif;
-$font-family-serif : Merriweather, Georgia, serif;
+$font-family-sans-serif: "pp-regular", "Helvetica Neue", Helvetica, sans-serif;
+$font-family-headings: "pp-light", "Helvetica Neue", Helvetica, sans-serif;
 
 
 
@@ -10,7 +10,7 @@ $font-family-serif : Merriweather, Georgia, serif;
 
 $body-bg: $white;
 $body-font-color: $oslogray;
-$body-font-family: $font-family-serif;
+$body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
 
@@ -32,10 +32,10 @@ $primary-color: #304A45;
 // e. Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-$header-font-family: $font-family-sans-serif;
+$header-font-family: $font-family-headings;
 $header-font-weight: $font-weight-normal;
 $header-font-style: normal;
-$header-font-color: $capecod;
+$header-font-color: $black;
 $header-line-height: 1.15em;
 $header-top-margin: 0;
 $header-bottom-margin: .4em;
