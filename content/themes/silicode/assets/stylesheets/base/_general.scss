@@ -20,8 +20,10 @@
 }
 
 
-.content{
-  margin-top: rem-calc(80)
+.content {
+  @media #{$small} {
+    margin-top: rem-calc(80);
+  }
 }
 
 
@@ -149,7 +151,6 @@
   font-size: rem-calc(50);
   letter-spacing: rem-calc(-1);
   font-weight: 700;
-  font-family: "Open Sans", sans-serif;
   color: $white;
 }
 
