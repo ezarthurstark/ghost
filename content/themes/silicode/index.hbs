@@ -2,9 +2,13 @@
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
   <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
-    <a class="subscribe-button" href="#" data-reveal-id="js-reveal-search">
+    <a class="back-button" href="#" data-reveal-id="js-reveal-search">
       <i class="fa fa-fw fa-search"></i>
       Rechercher
+    </a>
+    <a class="subscribe-button" href="{{@blog.url}}/rss/">
+      <i class="fa fa-fw fa-rss"></i>
+      S’abonner
     </a>
   </nav>
 </header>

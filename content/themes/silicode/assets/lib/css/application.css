@@ -4971,25 +4971,31 @@ pagination prev/next links */
   display: none;
 }
 
-.site-footer {
+.m-footer {
   margin-top: 2.5rem;
   padding: 2.5rem 0.625rem;
   border-top: 1px solid #EBF2F6;
   font-size: 0.75rem;
 }
-.site-footer:before, .site-footer:after {
+.m-footer:before, .m-footer:after {
   content: " ";
   display: table;
 }
-.site-footer:after {
+.m-footer:after {
   clear: both;
 }
-.site-footer a {
+.m-footer a {
   text-decoration: none;
   font-weight: bold;
 }
-.site-footer a:hover {
+.m-footer a:hover {
   text-decoration: underline;
+}
+.m-footer .shape-logo {
+  fill: #6E7276;
+  width: 16px;
+  height: 16px;
+  margin: -5px 5px -5px 0;
 }
 
 .main-nav {

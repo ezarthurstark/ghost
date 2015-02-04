@@ -1,4 +1,4 @@
-.site-footer {
+.m-footer {
   @include clearfix;
   margin-top: rem-calc(40);
   padding: rem-calc(40 10);
@@ -11,5 +11,12 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  .shape-logo {
+    fill: #6E7276;
+    width: 16px;
+    height: 16px;
+    margin: -5px 5px -5px 0;
   }
 }
